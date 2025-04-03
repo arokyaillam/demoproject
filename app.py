@@ -75,7 +75,12 @@ def signup():
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return render_template('dashboard.html', username=current_user.username)
+    db = get_db()
+    user = db.execute('SELECT access_token FROM users WHERE id = ?', (current_user.id,)).fetchone()
+    db.close()
+    return render_template('dashboard.html', 
+                         username=current_user.username,
+                         access_token=user['access_token'] if user else None)
 
 @app.route('/logout')
 @login_required
