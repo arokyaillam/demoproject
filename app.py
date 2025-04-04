@@ -42,15 +42,44 @@ def login():
         password = request.form['password']
         
         db = get_db()
-        user = db.execute('SELECT * FROM users WHERE username = ?', (username,)).fetchone()
-        db.close()
-
-        if user and check_password_hash(user['password'], password):
-            user_obj = User(user['id'], user['username'], user['password'])
-            login_user(user_obj)
-            return redirect(url_for('dashboard'))
-        
-        flash('Invalid username or password')
+        try:
+            user = db.execute('SELECT * FROM users WHERE username = ?', (username,)).fetchone()
+            
+            if user and check_password_hash(user['password'], password):
+                user_obj = User(user['id'], user['username'], user['password'])
+                login_user(user_obj)
+                
+                # Store access token in a variable before closing db
+                access_token = user['access_token'] if 'access_token' in user.keys() else None
+                db.close()
+                
+                # Check Upstox connection
+                if not access_token:
+                    flash('Please connect your Upstox account to access all features')
+                    return redirect(url_for('profile'))
+                
+                # Verify if token is still valid
+                try:
+                    headers = {
+                        'Accept': 'application/json',
+                        'Authorization': f'Bearer {access_token}'
+                    }
+                    response = requests.get('https://api.upstox.com/v2/user/profile', headers=headers)
+                    if response.status_code != 200:
+                        flash('Your Upstox connection needs to be renewed')
+                        return redirect(url_for('profile'))
+                except Exception:
+                    flash('Unable to verify Upstox connection')
+                    return redirect(url_for('profile'))
+                    
+                return redirect(url_for('dashboard'))
+            
+            flash('Invalid username or password')
+            db.close()
+        except Exception as e:
+            db.close()
+            flash(f'Login error: {str(e)}')
+            
     return render_template('login.html')
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -72,15 +101,104 @@ def signup():
         db.close()
     return render_template('signup.html')
 
-@app.route('/dashboard')
-@login_required
-def dashboard():
+def get_user_token():
     db = get_db()
     user = db.execute('SELECT access_token FROM users WHERE id = ?', (current_user.id,)).fetchone()
     db.close()
+    return user['access_token'] if user and 'access_token' in user.keys() else None
+
+@app.route('/dashboard')
+@login_required
+def dashboard():
     return render_template('dashboard.html', 
                          username=current_user.username,
-                         access_token=user['access_token'] if user else None)
+                         access_token=get_user_token())
+
+# Update other route functions similarly
+@app.route('/strategy')
+@login_required
+def strategy():
+    return render_template('strategy.html', 
+                         username=current_user.username,
+                         access_token=get_user_token())
+
+@app.route('/testing')
+@login_required
+def testing():
+    return render_template('testing.html', 
+                         username=current_user.username,
+                         access_token=get_user_token())
+
+@app.route('/orders')
+@login_required
+def orders():
+    return render_template('orders.html', 
+                         username=current_user.username,
+                         access_token=get_user_token())
+
+@app.route('/option_chain')
+@login_required
+def option_chain():
+    return render_template('option_chain.html', 
+                         username=current_user.username,
+                         access_token=get_user_token())
+
+@app.route('/market')
+@login_required
+def market():
+    return render_template('market.html', 
+                         username=current_user.username,
+                         access_token=get_user_token())
+
+@app.route('/funds')
+@login_required
+def funds():
+    access_token = get_user_token()
+    fund_data = {
+        'SEC': None,
+        'COM': None
+    }
+    
+    if access_token:
+        # Fetch equity (SEC) segment funds
+        try:
+            url_sec = 'https://api.upstox.com/v2/user/get-funds-and-margin?segment=SEC'
+            headers = {
+                'Accept': 'application/json',
+                'Authorization': f'Bearer {access_token}'
+            }
+            response_sec = requests.get(url_sec, headers=headers)
+            if response_sec.status_code == 200:
+                fund_data['SEC'] = response_sec.json().get('data', {})
+        except Exception as e:
+            flash(f'Error fetching equity funds: {str(e)}')
+            print(f"API Error (SEC): {str(e)}")
+        
+        # Fetch commodity (COM) segment funds
+        try:
+            url_com = 'https://api.upstox.com/v2/user/get-funds-and-margin?segment=COM'
+            headers = {
+                'Accept': 'application/json',
+                'Authorization': f'Bearer {access_token}'
+            }
+            response_com = requests.get(url_com, headers=headers)
+            if response_com.status_code == 200:
+                fund_data['COM'] = response_com.json().get('data', {})
+        except Exception as e:
+            flash(f'Error fetching commodity funds: {str(e)}')
+            print(f"API Error (COM): {str(e)}")
+    
+    return render_template('funds.html', 
+                         username=current_user.username,
+                         access_token=access_token,
+                         fund_data=fund_data)
+
+@app.route('/alert-settings')
+@login_required
+def alert_settings():
+    return render_template('alert_settings.html', 
+                         username=current_user.username,
+                         access_token=get_user_token())
 
 @app.route('/logout')
 @login_required
@@ -165,33 +283,6 @@ def upstox_callback():
     
     return redirect(url_for('dashboard'))
 
-# Add these new routes after your existing routes
-
-@app.route('/strategy')
-@login_required
-def strategy():
-    return render_template('strategy.html', username=current_user.username)
-
-@app.route('/testing')
-@login_required
-def testing():
-    return render_template('testing.html', username=current_user.username)
-
-@app.route('/orders')
-@login_required
-def orders():
-    return render_template('orders.html', username=current_user.username)
-
-@app.route('/option_chain')
-@login_required
-def option_chain():
-    return render_template('option_chain.html', username=current_user.username)
-
-@app.route('/market')
-@login_required
-def market():
-    return render_template('market.html', username=current_user.username)
-
 @app.route('/profile')
 @login_required
 def profile():
@@ -243,17 +334,10 @@ def profile():
                              profile_data=None,
                              connection_details=None)
 
-@app.route('/funds')
-@login_required
-def funds():
-    return render_template('funds.html', username=current_user.username)
 
-@app.route('/alert-settings')
-@login_required
-def alert_settings():
-    return render_template('alert_settings.html', username=current_user.username)
 
 if __name__ == '__main__':
+    # Keep this part
     if not os.path.exists('database.db'):
         db = get_db()
         db.execute('''
