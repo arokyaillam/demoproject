@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import sqlite3
 import os
@@ -139,9 +139,105 @@ def orders():
 @app.route('/option_chain')
 @login_required
 def option_chain():
+    access_token = get_user_token()
+    option_data = {
+        'calls': [],
+        'puts': []
+    }
+    spot_price = None
+    
+    if access_token:
+        try:
+            # Get NIFTY spot price first
+            nifty_key = 'NSE_INDEX|Nifty 50'
+            spot_url = f'https://api.upstox.com/v2/market-quote/ltp?instrument_key={nifty_key}'
+            headers = {
+                'Accept': 'application/json',
+                'Authorization': f'Bearer {access_token}'
+            }
+            
+            spot_response = requests.get(spot_url, headers=headers)
+            
+            if spot_response.status_code == 200:
+                spot_data = spot_response.json().get('data', {})
+                nifty_data = spot_data.get('NSE_INDEX:Nifty 50', {}) or spot_data.get(nifty_key, {})
+                if nifty_data:
+                    spot_price = nifty_data.get('last_price')
+            
+            # Use the option contract API endpoint without specifying expiry date
+            url = 'https://api.upstox.com/v2/option/contract'
+            headers = {
+                'Accept': 'application/json',
+                'Authorization': f'Bearer {access_token}'
+            }
+            
+            # Add the required instrument_key parameter
+            params = {
+                'instrument_key': nifty_key
+            }
+            
+            # Try without specifying expiry date first
+            response = requests.get(url, headers=headers, params=params)
+            print("Option Chain Response:", response.text[:200])  # Debug print (truncated)
+            
+            if response.status_code == 200:
+                data = response.json().get('data', [])
+                
+                # If no data, try with a specific expiry date
+                if not data:
+                    # Try with a few common monthly expiry dates
+                    from datetime import datetime, timedelta
+                    current_date = datetime.now()
+                    
+                    # Try current month's last Thursday
+                    current_month = current_date.replace(day=28)
+                    while current_month.month == current_date.month:
+                        if current_month.weekday() == 3:  # Thursday
+                            last_thursday = current_month
+                        current_month += timedelta(days=1)
+                    
+                    # Try this expiry
+                    params['expiry_date'] = last_thursday.strftime('%Y-%m-%d')
+                    response = requests.get(url, headers=headers, params=params)
+                    data = response.json().get('data', [])
+                
+                # Process option contracts
+                for contract in data:
+                    strike_price = float(contract.get('strike_price', 0))
+                    
+                    # Only include strikes near the spot price (±1000 points)
+                    if spot_price and abs(strike_price - spot_price) > 1000:
+                        continue
+                        
+                    contract_info = {
+                        'trading_symbol': contract.get('trading_symbol'),
+                        'strike_price': strike_price,
+                        'expiry': contract.get('expiry'),
+                        'lot_size': contract.get('lot_size', 50),
+                        'instrument_key': contract.get('instrument_key')
+                    }
+                    
+                    if contract.get('instrument_type') == 'CE':
+                        option_data['calls'].append(contract_info)
+                    elif contract.get('instrument_type') == 'PE':
+                        option_data['puts'].append(contract_info)
+                
+                # Sort by strike price
+                option_data['calls'].sort(key=lambda x: float(x['strike_price']))
+                option_data['puts'].sort(key=lambda x: float(x['strike_price']))
+            else:
+                print(f"API Error: Status {response.status_code}, Response: {response.text}")
+                flash('Error fetching option chain data')
+                
+        except Exception as e:
+            print(f"Error in option chain route: {str(e)}")
+            flash('Error fetching option chain data')
+    
     return render_template('option_chain.html', 
                          username=current_user.username,
-                         access_token=get_user_token())
+                         access_token=access_token,
+                         option_data=option_data,
+                         spot_price=spot_price)
 
 @app.route('/market')
 @login_required
@@ -173,21 +269,23 @@ def market():
             
             if response.status_code == 200:
                 data = response.json().get('data', {})
-                # Process NIFTY data
-                nifty_data = data.get(nifty_key, {})
+                
+                # Process NIFTY data - handle new response format
+                nifty_data = data.get('NSE_INDEX:Nifty 50', {}) or data.get(nifty_key, {})
                 if nifty_data:
                     market_data['nifty'] = {
                         'last_price': nifty_data.get('last_price', 'N/A'),
-                        'change': 0,
-                        'change_percentage': 0,
+                        'change': 0,  # We don't have change data in the new format
+                        'change_percentage': 0,  # We don't have change percentage in the new format
                         'high': 'N/A',
                         'low': 'N/A',
                         'open': 'N/A',
-                        'close': 'N/A'
+                        'close': 'N/A',
+                        'volume': 'N/A'
                     }
                 
-                # Process BANKNIFTY data
-                banknifty_data = data.get(banknifty_key, {})
+                # Process BANKNIFTY data - handle new response format
+                banknifty_data = data.get('NSE_INDEX:Nifty Bank', {}) or data.get(banknifty_key, {})
                 if banknifty_data:
                     market_data['banknifty'] = {
                         'last_price': banknifty_data.get('last_price', 'N/A'),
@@ -206,10 +304,80 @@ def market():
             print(f"Error in market route: {str(e)}")
             flash('Error fetching market data')
     
+    # If it's an AJAX request, return JSON data
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+        return jsonify(market_data)
+    
+    # Otherwise render the template
     return render_template('market.html', 
                          username=current_user.username,
                          access_token=access_token,
                          market_data=market_data)
+
+@app.route('/market/update')
+@login_required
+def market_update():
+    access_token = get_user_token()
+    market_data = {
+        'nifty': None,
+        'banknifty': None
+    }
+    
+    if access_token:
+        try:
+            # Define instrument keys with correct format
+            nifty_key = 'NSE_INDEX|Nifty 50'
+            banknifty_key = 'NSE_INDEX|Nifty Bank'
+            
+            # URL encode the instrument keys
+            from urllib.parse import quote
+            encoded_keys = quote(f"{nifty_key},{banknifty_key}")
+            
+            url = f'https://api.upstox.com/v2/market-quote/ltp?instrument_key={encoded_keys}'
+            headers = {
+                'Accept': 'application/json',
+                'Authorization': f'Bearer {access_token}'
+            }
+            
+            response = requests.get(url, headers=headers)
+            
+            if response.status_code == 200:
+                data = response.json().get('data', {})
+                
+                # Process NIFTY data - handle new response format
+                nifty_data = data.get('NSE_INDEX:Nifty 50', {}) or data.get(nifty_key, {})
+                if nifty_data:
+                    market_data['nifty'] = {
+                        'last_price': nifty_data.get('last_price', 'N/A'),
+                        'change': 0,
+                        'change_percentage': 0,
+                        'high': 'N/A',
+                        'low': 'N/A',
+                        'open': 'N/A',
+                        'close': 'N/A',
+                        'volume': 'N/A'
+                    }
+                
+                # Process BANKNIFTY data - handle new response format
+                banknifty_data = data.get('NSE_INDEX:Nifty Bank', {}) or data.get(banknifty_key, {})
+                if banknifty_data:
+                    market_data['banknifty'] = {
+                        'last_price': banknifty_data.get('last_price', 'N/A'),
+                        'change': 0,
+                        'change_percentage': 0,
+                        'high': 'N/A',
+                        'low': 'N/A',
+                        'open': 'N/A',
+                        'close': 'N/A'
+                    }
+            
+            return jsonify(market_data)
+                
+        except Exception as e:
+            print(f"Error in market update route: {str(e)}")
+            return jsonify({'error': str(e)})
+    
+    return jsonify({'error': 'No access token'})
 
 @app.route('/funds')
 @login_required

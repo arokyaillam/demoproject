@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Option Chain</h2>
+    
+    {% if spot_price %}
+    <div class="alert alert-info">
+        <strong>NIFTY Spot Price:</strong> {{ spot_price }}
+    </div>
+    {% endif %}
+    
+    {% if option_data.calls|length > 0 or option_data.puts|length > 0 %}
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th colspan="4" class="text-center bg-primary text-white">CALLS</th>
+                    <th class="text-center bg-dark text-white">Strike Price</th>
+                    <th colspan="4" class="text-center bg-danger text-white">PUTS</th>
+                </tr>
+                <tr>
+                    <th>Symbol</th>
+                    <th>LTP</th>
+                    <th>Change</th>
+                    <th>OI</th>
+                    <th class="text-center">Strike</th>
+                    <th>OI</th>
+                    <th>Change</th>
+                    <th>LTP</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for strike in range(option_data.calls|length) %}
+                <tr>
+                    <td>{{ option_data.calls[strike].trading_symbol }}</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="text-center font-weight-bold">{{ option_data.calls[strike].strike_price }}</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>{{ option_data.puts[strike].trading_symbol if strike < option_data.puts|length else "-" }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="alert alert-warning">
+        <h4>No option data available</h4>
+        <p>This could be due to one of the following reasons:</p>
+        <ul>
+            <li>The market is closed</li>
+            <li>No options are available for the current expiry date</li>
+            <li>There was an issue with the API connection</li>
+        </ul>
+        <p>Try refreshing the page or check back during market hours.</p>
+    </div>
+    {% endif %}
+    
+    <div class="mt-4">
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+        <button class="btn btn-primary" onclick="window.location.reload()">Refresh Data</button>
+    </div>
+</div>
+{% endblock %}

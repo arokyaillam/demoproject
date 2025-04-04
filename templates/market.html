@@ -1,66 +1,72 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
-<h1>Market Overview</h1>
-
-{% if not access_token %}
-<div class="alert alert-warning">
-    Please connect your Upstox account to view market information.
-    <a href="{{ url_for('profile') }}" class="btn btn-primary">Connect Upstox</a>
-</div>
-{% else %}
-
-<div class="row">
-    <div class="col-md-6">
-        <div class="card mb-4">
-            <div class="card-header">
-                <h3>NIFTY 50</h3>
-            </div>
-            <div class="card-body">
-                {% if market_data.nifty %}
-                    <table class="table">
-                        <tr>
-                            <th>Last Price</th>
-                            <td>{{ market_data.nifty.last_price }}</td>
-                        </tr>
-                    </table>
-                {% else %}
-                    <p>Unable to fetch NIFTY data.</p>
-                {% endif %}
-            </div>
-        </div>
-    </div>
+<div class="container mt-4">
+    <h2>Market Data</h2>
     
-    <div class="col-md-6">
-        <div class="card mb-4">
-            <div class="card-header">
-                <h3>BANK NIFTY</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">
+                    <h5>NIFTY</h5>
+                </div>
+                <div class="card-body">
+                    <div id="nifty-data">
+                        {% if market_data.nifty %}
+                        <h3 id="nifty-price" class="display-4">{{ market_data.nifty.last_price }}</h3>
+                        <p id="nifty-change" class="lead">Change: {{ market_data.nifty.change }} ({{ market_data.nifty.change_percentage }}%)</p>
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                {% if market_data.banknifty %}
-                    <table class="table">
-                        <tr>
-                            <th>Last Price</th>
-                            <td>{{ market_data.banknifty.last_price }}</td>
-                        </tr>
-                    </table>
-                {% else %}
-                    <p>Unable to fetch BANK NIFTY data.</p>
-                {% endif %}
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">
+                    <h5>BANK NIFTY</h5>
+                </div>
+                <div class="card-body">
+                    <div id="banknifty-data">
+                        {% if market_data.banknifty %}
+                        <h3 id="banknifty-price" class="display-4">{{ market_data.banknifty.last_price }}</h3>
+                        <p id="banknifty-change" class="lead">Change: {{ market_data.banknifty.change }} ({{ market_data.banknifty.change_percentage }}%)</p>
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Debug section -->
-<div class="card mt-4">
-    <div class="card-header">
-        <h3>Debug Information</h3>
-    </div>
-    <div class="card-body">
-        <h4>Raw Market Data:</h4>
-        <pre>{{ market_data|tojson(indent=2) }}</pre>
-    </div>
-</div>
-{% endif %}
+<script>
+    // Function to update market data
+    function updateMarketData() {
+        fetch('/market/update')
+            .then(response => response.json())
+            .then(data => {
+                // Update NIFTY data
+                if (data.nifty) {
+                    document.getElementById('nifty-price').textContent = data.nifty.last_price;
+                    document.getElementById('nifty-change').textContent = 
+                        `Change: ${data.nifty.change} (${data.nifty.change_percentage}%)`;
+                }
+                
+                // Update BANKNIFTY data
+                if (data.banknifty) {
+                    document.getElementById('banknifty-price').textContent = data.banknifty.last_price;
+                    document.getElementById('banknifty-change').textContent = 
+                        `Change: ${data.banknifty.change} (${data.banknifty.change_percentage}%)`;
+                }
+            })
+            .catch(error => console.error('Error updating market data:', error));
+    }
+    
+    // Update data every 1 second
+    setInterval(updateMarketData, 1000);
+</script>
 {% endblock %}
