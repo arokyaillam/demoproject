@@ -10,43 +10,106 @@
     </div>
     {% endif %}
     
-    {% if option_data.calls|length > 0 or option_data.puts|length > 0 %}
+    <!-- Expiry Selection Form -->
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h5>Select Expiry Date</h5>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="{{ url_for('option_chain') }}" class="form-inline">
+                <div class="form-group mr-2">
+                    <select name="expiry" class="form-control">
+                        {% for expiry in available_expiries %}
+                        <option value="{{ expiry }}" {% if expiry == selected_expiry %}selected{% endif %}>{{ expiry }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Load Chain</button>
+            </form>
+        </div>
+    </div>
+    
+    {% if option_data|length > 0 %}
     <div class="table-responsive">
-        <table class="table table-striped table-bordered">
+        <table class="table table-striped table-bordered table-sm">
             <thead class="thead-dark">
                 <tr>
-                    <th colspan="4" class="text-center bg-primary text-white">CALLS</th>
-                    <th class="text-center bg-dark text-white">Strike Price</th>
-                    <th colspan="4" class="text-center bg-danger text-white">PUTS</th>
+                    <th colspan="6" class="text-center bg-primary text-white">CALLS</th>
+                    <th class="text-center bg-dark text-white">Strike</th>
+                    <th colspan="6" class="text-center bg-danger text-white">PUTS</th>
                 </tr>
                 <tr>
-                    <th>Symbol</th>
-                    <th>LTP</th>
-                    <th>Change</th>
                     <th>OI</th>
-                    <th class="text-center">Strike</th>
-                    <th>OI</th>
-                    <th>Change</th>
+                    <th>Volume</th>
+                    <th>IV</th>
+                    <th>Delta</th>
                     <th>LTP</th>
-                    <th>Symbol</th>
+                    <th>Chg%</th>
+                    <th class="text-center">Price</th>
+                    <th>Chg%</th>
+                    <th>LTP</th>
+                    <th>Delta</th>
+                    <th>IV</th>
+                    <th>Volume</th>
+                    <th>OI</th>
                 </tr>
             </thead>
             <tbody>
-                {% for strike in range(option_data.calls|length) %}
-                <tr>
-                    <td>{{ option_data.calls[strike].trading_symbol }}</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td class="text-center font-weight-bold">{{ option_data.calls[strike].strike_price }}</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>{{ option_data.puts[strike].trading_symbol if strike < option_data.puts|length else "-" }}</td>
+                {% for option in option_data %}
+                <tr {% if option.strike_price == atm_strike %}class="table-warning"{% endif %}>
+                    <!-- CALL DATA -->
+                    <td>{{ option.call_options.market_data.oi|default('-', true) }}</td>
+                    <td>{{ option.call_options.market_data.volume|default('-', true) }}</td>
+                    <td>{{ "%.2f"|format(option.call_options.option_greeks.iv|default(0)) }}%</td>
+                    <td>{{ "%.2f"|format(option.call_options.option_greeks.delta|default(0)) }}</td>
+                    <td>{{ option.call_options.market_data.ltp|default('-', true) }}</td>
+                    <td>
+                        {% if option.call_options.market_data.ltp and option.call_options.market_data.close_price %}
+                            {% set change_pct = ((option.call_options.market_data.ltp - option.call_options.market_data.close_price) / option.call_options.market_data.close_price * 100)|round(2) %}
+                            <span class="{% if change_pct > 0 %}text-success{% elif change_pct < 0 %}text-danger{% endif %}">
+                                {{ change_pct }}%
+                            </span>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    
+                    <!-- STRIKE PRICE -->
+                    <td class="text-center font-weight-bold">{{ option.strike_price }}</td>
+                    
+                    <!-- PUT DATA -->
+                    <td>
+                        {% if option.put_options.market_data.ltp and option.put_options.market_data.close_price %}
+                            {% set change_pct = ((option.put_options.market_data.ltp - option.put_options.market_data.close_price) / option.put_options.market_data.close_price * 100)|round(2) %}
+                            <span class="{% if change_pct > 0 %}text-success{% elif change_pct < 0 %}text-danger{% endif %}">
+                                {{ change_pct }}%
+                            </span>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>{{ option.put_options.market_data.ltp|default('-', true) }}</td>
+                    <td>{{ "%.2f"|format(option.put_options.option_greeks.delta|default(0)) }}</td>
+                    <td>{{ "%.2f"|format(option.put_options.option_greeks.iv|default(0)) }}%</td>
+                    <td>{{ option.put_options.market_data.volume|default('-', true) }}</td>
+                    <td>{{ option.put_options.market_data.oi|default('-', true) }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
+    </div>
+    
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5>PCR (Put-Call Ratio)</h5>
+                </div>
+                <div class="card-body">
+                    <h3>{{ pcr|default('N/A') }}</h3>
+                </div>
+            </div>
+        </div>
     </div>
     {% else %}
     <div class="alert alert-warning">
@@ -54,10 +117,10 @@
         <p>This could be due to one of the following reasons:</p>
         <ul>
             <li>The market is closed</li>
-            <li>No options are available for the current expiry date</li>
+            <li>No options are available for the selected expiry date</li>
             <li>There was an issue with the API connection</li>
         </ul>
-        <p>Try refreshing the page or check back during market hours.</p>
+        <p>Try selecting a different expiry date or check back during market hours.</p>
     </div>
     {% endif %}
     

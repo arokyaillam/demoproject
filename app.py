@@ -136,15 +136,16 @@ def orders():
                          username=current_user.username,
                          access_token=get_user_token())
 
-@app.route('/option_chain')
+@app.route('/option_chain', methods=['GET', 'POST'])
 @login_required
 def option_chain():
     access_token = get_user_token()
-    option_data = {
-        'calls': [],
-        'puts': []
-    }
+    option_data = []
     spot_price = None
+    available_expiries = []
+    selected_expiry = None
+    pcr = None
+    atm_strike = None
     
     if access_token:
         try:
@@ -164,8 +165,8 @@ def option_chain():
                 if nifty_data:
                     spot_price = nifty_data.get('last_price')
             
-            # Use the option contract API endpoint without specifying expiry date
-            url = 'https://api.upstox.com/v2/option/contract'
+            # First get all available expiry dates using the contract API
+            contract_url = 'https://api.upstox.com/v2/option/contract'
             headers = {
                 'Accept': 'application/json',
                 'Authorization': f'Bearer {access_token}'
@@ -176,57 +177,71 @@ def option_chain():
                 'instrument_key': nifty_key
             }
             
-            # Try without specifying expiry date first
-            response = requests.get(url, headers=headers, params=params)
-            print("Option Chain Response:", response.text[:200])  # Debug print (truncated)
+            contract_response = requests.get(contract_url, headers=headers, params=params)
             
-            if response.status_code == 200:
-                data = response.json().get('data', [])
+            if contract_response.status_code == 200:
+                contract_data = contract_response.json().get('data', [])
                 
-                # If no data, try with a specific expiry date
-                if not data:
-                    # Try with a few common monthly expiry dates
-                    from datetime import datetime, timedelta
-                    current_date = datetime.now()
-                    
-                    # Try current month's last Thursday
-                    current_month = current_date.replace(day=28)
-                    while current_month.month == current_date.month:
-                        if current_month.weekday() == 3:  # Thursday
-                            last_thursday = current_month
-                        current_month += timedelta(days=1)
-                    
-                    # Try this expiry
-                    params['expiry_date'] = last_thursday.strftime('%Y-%m-%d')
-                    response = requests.get(url, headers=headers, params=params)
-                    data = response.json().get('data', [])
+                # Extract all unique expiry dates
+                from datetime import datetime
+                current_date = datetime.now()
                 
-                # Process option contracts
-                for contract in data:
-                    strike_price = float(contract.get('strike_price', 0))
-                    
-                    # Only include strikes near the spot price (±1000 points)
-                    if spot_price and abs(strike_price - spot_price) > 1000:
-                        continue
-                        
-                    contract_info = {
-                        'trading_symbol': contract.get('trading_symbol'),
-                        'strike_price': strike_price,
-                        'expiry': contract.get('expiry'),
-                        'lot_size': contract.get('lot_size', 50),
-                        'instrument_key': contract.get('instrument_key')
+                for contract in contract_data:
+                    if 'expiry' in contract:
+                        try:
+                            expiry_date = datetime.strptime(contract['expiry'], '%Y-%m-%d')
+                            if expiry_date > current_date and contract['expiry'] not in available_expiries:
+                                available_expiries.append(contract['expiry'])
+                        except (ValueError, TypeError):
+                            continue
+                
+                # Sort expiry dates
+                available_expiries.sort()
+                
+                # Get selected expiry from form or use first available
+                if request.method == 'POST' and request.form.get('expiry'):
+                    selected_expiry = request.form.get('expiry')
+                elif available_expiries:
+                    selected_expiry = available_expiries[0]
+                
+                # If we have a selected expiry, get option chain for that expiry
+                if selected_expiry:
+                    # Use the new option chain API endpoint
+                    chain_url = 'https://api.upstox.com/v2/option/chain'
+                    chain_params = {
+                        'instrument_key': nifty_key,
+                        'expiry_date': selected_expiry
                     }
                     
-                    if contract.get('instrument_type') == 'CE':
-                        option_data['calls'].append(contract_info)
-                    elif contract.get('instrument_type') == 'PE':
-                        option_data['puts'].append(contract_info)
-                
-                # Sort by strike price
-                option_data['calls'].sort(key=lambda x: float(x['strike_price']))
-                option_data['puts'].sort(key=lambda x: float(x['strike_price']))
+                    chain_response = requests.get(chain_url, headers=headers, params=chain_params)
+                    print(f"Option Chain Response: {chain_response.status_code}")
+                    
+                    if chain_response.status_code == 200:
+                        chain_data = chain_response.json().get('data', [])
+                        
+                        # Find ATM strike (closest to spot price)
+                        if spot_price and chain_data:
+                            strikes = [option['strike_price'] for option in chain_data]
+                            atm_index = min(range(len(strikes)), key=lambda i: abs(strikes[i] - spot_price))
+                            atm_strike = strikes[atm_index]
+                            
+                            # Get PCR from first item (should be the same for all)
+                            if chain_data:
+                                pcr = chain_data[0].get('pcr')
+                        
+                        # Sort by strike price
+                        sorted_data = sorted(chain_data, key=lambda x: x['strike_price'])
+                        
+                        # Limit to 10 strikes above and below ATM
+                        if atm_strike:
+                            atm_index = next((i for i, item in enumerate(sorted_data) if item['strike_price'] == atm_strike), 0)
+                            start_index = max(0, atm_index - 10)
+                            end_index = min(len(sorted_data), atm_index + 11)  # +11 to include the ATM strike
+                            option_data = sorted_data[start_index:end_index]
+                        else:
+                            option_data = sorted_data
             else:
-                print(f"API Error: Status {response.status_code}, Response: {response.text}")
+                print(f"API Error: Status {contract_response.status_code}, Response: {contract_response.text}")
                 flash('Error fetching option chain data')
                 
         except Exception as e:
@@ -237,7 +252,11 @@ def option_chain():
                          username=current_user.username,
                          access_token=access_token,
                          option_data=option_data,
-                         spot_price=spot_price)
+                         spot_price=spot_price,
+                         available_expiries=available_expiries,
+                         selected_expiry=selected_expiry,
+                         pcr=pcr,
+                         atm_strike=atm_strike)
 
 @app.route('/market')
 @login_required
