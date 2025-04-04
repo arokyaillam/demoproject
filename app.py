@@ -95,6 +95,10 @@ def connect_upstox():
     client_secret = request.form.get('client_secret')
     redirect_uri = request.form.get('redirect_uri')
     
+    if not all([client_id, client_secret, redirect_uri]):
+        flash('All fields are required')
+        return redirect(url_for('profile'))
+    
     # Store API credentials in session
     session['upstox_credentials'] = {
         'client_id': client_id,
@@ -139,10 +143,18 @@ def upstox_callback():
         response = requests.post(url, headers=headers, data=data)
         if response.status_code == 200:
             token_data = response.json()
-            # Store the access token in the database
             db = get_db()
-            db.execute('UPDATE users SET access_token = ? WHERE id = ?',
-                      (token_data.get('access_token'), current_user.id))
+            db.execute('''
+                UPDATE users 
+                SET access_token = ?, client_id = ?, client_secret = ?, redirect_uri = ?
+                WHERE id = ?
+            ''', (
+                token_data.get('access_token'),
+                credentials['client_id'],
+                credentials['client_secret'],
+                credentials['redirect_uri'],
+                current_user.id
+            ))
             db.commit()
             db.close()
             flash('Successfully connected to Upstox!')
@@ -153,6 +165,94 @@ def upstox_callback():
     
     return redirect(url_for('dashboard'))
 
+# Add these new routes after your existing routes
+
+@app.route('/strategy')
+@login_required
+def strategy():
+    return render_template('strategy.html', username=current_user.username)
+
+@app.route('/testing')
+@login_required
+def testing():
+    return render_template('testing.html', username=current_user.username)
+
+@app.route('/orders')
+@login_required
+def orders():
+    return render_template('orders.html', username=current_user.username)
+
+@app.route('/option_chain')
+@login_required
+def option_chain():
+    return render_template('option_chain.html', username=current_user.username)
+
+@app.route('/market')
+@login_required
+def market():
+    return render_template('market.html', username=current_user.username)
+
+@app.route('/profile')
+@login_required
+def profile():
+    try:
+        db = get_db()
+        # First check if the columns exist
+        columns = db.execute("PRAGMA table_info(users)").fetchall()
+        column_names = [column[1] for column in columns]
+        
+        # Build query based on existing columns
+        select_columns = ['access_token']
+        if 'client_id' in column_names:
+            select_columns.extend(['client_id', 'client_secret', 'redirect_uri'])
+        
+        query = f"SELECT {', '.join(select_columns)} FROM users WHERE id = ?"
+        user = db.execute(query, (current_user.id,)).fetchone()
+        db.close()
+
+        profile_data = None
+        if user and user['access_token']:
+            try:
+                url = 'https://api.upstox.com/v2/user/profile'
+                headers = {
+                    'Accept': 'application/json',
+                    'Authorization': f'Bearer {user["access_token"]}'
+                }
+                response = requests.get(url, headers=headers)
+                print("API Response:", response.text)  # Debug print
+                
+                if response.status_code == 200:
+                    data = response.json().get('data', {})
+                    profile_data = data
+                else:
+                    flash(f'Failed to fetch profile data: {response.text}')
+            except Exception as e:
+                flash(f'Error fetching profile: {str(e)}')
+                print(f"API Error: {str(e)}")  # Debug print
+
+        return render_template('profile.html', 
+                             username=current_user.username,
+                             profile_data=profile_data,
+                             connection_details=user if user else None)
+                             
+    except Exception as e:
+        flash(f'Database error: {str(e)}')
+        print(f"Database Error: {str(e)}")  # Debug print
+        return render_template('profile.html', 
+                             username=current_user.username,
+                             profile_data=None,
+                             connection_details=None)
+
+@app.route('/funds')
+@login_required
+def funds():
+    return render_template('funds.html', username=current_user.username)
+
+@app.route('/alert-settings')
+@login_required
+def alert_settings():
+    return render_template('alert_settings.html', username=current_user.username)
+
 if __name__ == '__main__':
     if not os.path.exists('database.db'):
         db = get_db()
@@ -161,7 +261,10 @@ if __name__ == '__main__':
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 username TEXT UNIQUE NOT NULL,
                 password TEXT NOT NULL,
-                access_token TEXT
+                access_token TEXT,
+                client_id TEXT,
+                client_secret TEXT,
+                redirect_uri TEXT
             )
         ''')
         db.commit()
