@@ -146,9 +146,70 @@ def option_chain():
 @app.route('/market')
 @login_required
 def market():
+    access_token = get_user_token()
+    market_data = {
+        'nifty': None,
+        'banknifty': None
+    }
+    
+    if access_token:
+        try:
+            # Define instrument keys with correct format
+            nifty_key = 'NSE_INDEX|Nifty 50'
+            banknifty_key = 'NSE_INDEX|Nifty Bank'
+            
+            # URL encode the instrument keys
+            from urllib.parse import quote
+            encoded_keys = quote(f"{nifty_key},{banknifty_key}")
+            
+            url = f'https://api.upstox.com/v2/market-quote/ltp?instrument_key={encoded_keys}'
+            headers = {
+                'Accept': 'application/json',
+                'Authorization': f'Bearer {access_token}'
+            }
+            
+            response = requests.get(url, headers=headers)
+            print("API Response:", response.text)  # Debug print
+            
+            if response.status_code == 200:
+                data = response.json().get('data', {})
+                # Process NIFTY data
+                nifty_data = data.get(nifty_key, {})
+                if nifty_data:
+                    market_data['nifty'] = {
+                        'last_price': nifty_data.get('last_price', 'N/A'),
+                        'change': 0,
+                        'change_percentage': 0,
+                        'high': 'N/A',
+                        'low': 'N/A',
+                        'open': 'N/A',
+                        'close': 'N/A'
+                    }
+                
+                # Process BANKNIFTY data
+                banknifty_data = data.get(banknifty_key, {})
+                if banknifty_data:
+                    market_data['banknifty'] = {
+                        'last_price': banknifty_data.get('last_price', 'N/A'),
+                        'change': 0,
+                        'change_percentage': 0,
+                        'high': 'N/A',
+                        'low': 'N/A',
+                        'open': 'N/A',
+                        'close': 'N/A'
+                    }
+            else:
+                print(f"API Error: Status {response.status_code}, Response: {response.text}")
+                flash('Error fetching market data')
+                
+        except Exception as e:
+            print(f"Error in market route: {str(e)}")
+            flash('Error fetching market data')
+    
     return render_template('market.html', 
                          username=current_user.username,
-                         access_token=get_user_token())
+                         access_token=access_token,
+                         market_data=market_data)
 
 @app.route('/funds')
 @login_required

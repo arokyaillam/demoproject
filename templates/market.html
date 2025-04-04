@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Market Overview</h1>
+
+{% if not access_token %}
+<div class="alert alert-warning">
+    Please connect your Upstox account to view market information.
+    <a href="{{ url_for('profile') }}" class="btn btn-primary">Connect Upstox</a>
+</div>
+{% else %}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>NIFTY 50</h3>
+            </div>
+            <div class="card-body">
+                {% if market_data.nifty %}
+                    <table class="table">
+                        <tr>
+                            <th>Last Price</th>
+                            <td>{{ market_data.nifty.last_price }}</td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <p>Unable to fetch NIFTY data.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>BANK NIFTY</h3>
+            </div>
+            <div class="card-body">
+                {% if market_data.banknifty %}
+                    <table class="table">
+                        <tr>
+                            <th>Last Price</th>
+                            <td>{{ market_data.banknifty.last_price }}</td>
+                        </tr>
+                    </table>
+                {% else %}
+                    <p>Unable to fetch BANK NIFTY data.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Debug section -->
+<div class="card mt-4">
+    <div class="card-header">
+        <h3>Debug Information</h3>
+    </div>
+    <div class="card-body">
+        <h4>Raw Market Data:</h4>
+        <pre>{{ market_data|tojson(indent=2) }}</pre>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
