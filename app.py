@@ -147,103 +147,273 @@ def option_chain():
     pcr = None
     atm_strike = None
     
+    # Add index selection
+    selected_index = request.form.get('index', 'nifty')  # Default to Nifty
+    
     if access_token:
         try:
-            # Get NIFTY spot price first
-            nifty_key = 'NSE_INDEX|Nifty 50'
-            spot_url = f'https://api.upstox.com/v2/market-quote/ltp?instrument_key={nifty_key}'
+            # Define index keys based on selection
+            if selected_index == 'sensex':
+                index_key = 'BSE_INDEX|SENSEX'
+                index_display_name = 'Sensex'
+            else:  # Default to Nifty
+                index_key = 'NSE_INDEX|Nifty 50'
+                index_display_name = 'Nifty 50'
+            
+            # Get spot price first
+            spot_url = f'https://api.upstox.com/v2/market-quote/ltp?instrument_key={index_key}'
             headers = {
                 'Accept': 'application/json',
                 'Authorization': f'Bearer {access_token}'
             }
             
             spot_response = requests.get(spot_url, headers=headers)
+            print(f"Spot price response: {spot_response.status_code}")
             
             if spot_response.status_code == 200:
                 spot_data = spot_response.json().get('data', {})
-                nifty_data = spot_data.get('NSE_INDEX:Nifty 50', {}) or spot_data.get(nifty_key, {})
-                if nifty_data:
-                    spot_price = nifty_data.get('last_price')
+                # Handle different response formats
+                formatted_key = index_key.replace('|', ':')
+                index_data = spot_data.get(formatted_key, {}) or spot_data.get(index_key, {})
+                if index_data:
+                    spot_price = index_data.get('last_price')
+                    print(f"Spot price: {spot_price}")
             
-            # First get all available expiry dates using the contract API
-            contract_url = 'https://api.upstox.com/v2/option/contract'
-            headers = {
-                'Accept': 'application/json',
-                'Authorization': f'Bearer {access_token}'
-            }
+            # Get all available expiry dates using the market instruments API
+            # The old endpoint is returning 404, let's use a different approach
+            print("Fetching available expiry dates...")
             
-            # Add the required instrument_key parameter
-            params = {
-                'instrument_key': nifty_key
-            }
+            # Instead of using the derivatives endpoint, let's use the option chain API directly
+            # with a default expiry date and then extract available expiries from the response
             
-            contract_response = requests.get(contract_url, headers=headers, params=params)
-            
-            if contract_response.status_code == 200:
-                contract_data = contract_response.json().get('data', [])
+            # For Nifty options
+            if selected_index == 'nifty':
+                search_term = 'NIFTY'
+                # Use a hardcoded list of common expiry dates for the current month and next month
+                from datetime import datetime, timedelta
                 
-                # Extract all unique expiry dates
-                from datetime import datetime
                 current_date = datetime.now()
                 
-                for contract in contract_data:
-                    if 'expiry' in contract:
-                        try:
-                            expiry_date = datetime.strptime(contract['expiry'], '%Y-%m-%d')
-                            if expiry_date > current_date and contract['expiry'] not in available_expiries:
-                                available_expiries.append(contract['expiry'])
-                        except (ValueError, TypeError):
-                            continue
+                # Get all Thursdays for the next 3 months
+                available_expiries = []
+                start_date = current_date
+                end_date = current_date + timedelta(days=90)  # Look ahead 90 days
                 
-                # Sort expiry dates
-                available_expiries.sort()
+                # Add weekly expiries (all Thursdays)
+                test_date = start_date
+                while test_date <= end_date:
+                    # If it's a Thursday
+                    if test_date.weekday() == 3:
+                        # Format as YYYY-MM-DD
+                        formatted_expiry = test_date.strftime('%Y-%m-%d')
+                        available_expiries.append(formatted_expiry)
+                        test_date += timedelta(days=1)  # Move to next day
+                    else:
+                        test_date += timedelta(days=1)  # Move to next day
                 
-                # Get selected expiry from form or use first available
-                if request.method == 'POST' and request.form.get('expiry'):
-                    selected_expiry = request.form.get('expiry')
-                elif available_expiries:
-                    selected_expiry = available_expiries[0]
-                
-                # If we have a selected expiry, get option chain for that expiry
-                if selected_expiry:
-                    # Use the new option chain API endpoint
-                    chain_url = 'https://api.upstox.com/v2/option/chain'
-                    chain_params = {
-                        'instrument_key': nifty_key,
-                        'expiry_date': selected_expiry
-                    }
-                    
-                    chain_response = requests.get(chain_url, headers=headers, params=chain_params)
-                    print(f"Option Chain Response: {chain_response.status_code}")
-                    
-                    if chain_response.status_code == 200:
-                        chain_data = chain_response.json().get('data', [])
-                        
-                        # Find ATM strike (closest to spot price)
-                        if spot_price and chain_data:
-                            strikes = [option['strike_price'] for option in chain_data]
-                            atm_index = min(range(len(strikes)), key=lambda i: abs(strikes[i] - spot_price))
-                            atm_strike = strikes[atm_index]
-                            
-                            # Get PCR from first item (should be the same for all)
-                            if chain_data:
-                                pcr = chain_data[0].get('pcr')
-                        
-                        # Sort by strike price
-                        sorted_data = sorted(chain_data, key=lambda x: x['strike_price'])
-                        
-                        # Limit to 10 strikes above and below ATM
-                        if atm_strike:
-                            atm_index = next((i for i, item in enumerate(sorted_data) if item['strike_price'] == atm_strike), 0)
-                            start_index = max(0, atm_index - 10)
-                            end_index = min(len(sorted_data), atm_index + 11)  # +11 to include the ATM strike
-                            option_data = sorted_data[start_index:end_index]
-                        else:
-                            option_data = sorted_data
+                print(f"Generated expiry dates: {available_expiries}")
             else:
-                print(f"API Error: Status {contract_response.status_code}, Response: {contract_response.text}")
-                flash('Error fetching option chain data')
+                # For Sensex, use the same approach as Nifty
+                search_term = 'SENSEX'
+                from datetime import datetime, timedelta
                 
+                current_date = datetime.now()
+                
+                # Get all Thursdays for the next 3 months
+                available_expiries = []
+                start_date = current_date
+                end_date = current_date + timedelta(days=90)  # Look ahead 90 days
+                
+                # Add weekly expiries (all Thursdays)
+                test_date = start_date
+                while test_date <= end_date:
+                    # If it's a Thursday
+                    if test_date.weekday() == 3:
+                        # Format as YYYY-MM-DD
+                        formatted_expiry = test_date.strftime('%Y-%m-%d')
+                        available_expiries.append(formatted_expiry)
+                        test_date += timedelta(days=1)  # Move to next day
+                    else:
+                        test_date += timedelta(days=1)  # Move to next day
+                
+                print(f"Generated expiry dates: {available_expiries}")
+            
+            # Check if we have any expiry dates
+            if not available_expiries:
+                print("No expiry dates generated")
+                flash("No option expiry dates available. Please try again later.")
+                return render_template('option_chain.html', 
+                                    username=current_user.username,
+                                    access_token=access_token,
+                                    option_data=[],
+                                    spot_price=spot_price,
+                                    available_expiries=[],
+                                    selected_expiry=None,
+                                    pcr=None,
+                                    atm_strike=None,
+                                    selected_index=selected_index,
+                                    index_display_name=index_display_name)
+            
+            # Get selected expiry from form or use first available
+            if request.method == 'POST':
+                if request.form.get('manual_expiry'):
+                    # Use manually entered date if provided
+                    selected_expiry = request.form.get('manual_expiry')
+                    # Add to available expiries if not already there
+                    if selected_expiry not in available_expiries:
+                        available_expiries.append(selected_expiry)
+                        # Sort the expiries to maintain chronological order
+                        available_expiries.sort()
+                elif request.form.get('expiry'):
+                    selected_expiry = request.form.get('expiry')
+            elif available_expiries:
+                selected_expiry = available_expiries[0]
+            
+            print(f"Selected expiry: {selected_expiry}")
+            
+            # If we have a selected expiry, get option chain for that expiry
+            if selected_expiry:
+                # Use the option chain API endpoint
+                chain_url = 'https://api.upstox.com/v2/option/chain'
+                chain_params = {
+                    'instrument_key': index_key,
+                    'expiry_date': selected_expiry
+                }
+                
+                chain_response = requests.get(chain_url, headers=headers, params=chain_params)
+                print(f"Option Chain Response: {chain_response.status_code}")
+                print(f"Request URL: {chain_url}")
+                print(f"Request params: {chain_params}")
+                
+                if chain_response.status_code == 200:
+                    chain_data = chain_response.json().get('data', [])
+                    print(f"Chain data length: {len(chain_data)}")
+                    
+                    # Save the response to a file for debugging
+                    with open('d:/algoproject/chain_response.json', 'w') as f:
+                        import json
+                        json.dump(chain_response.json(), f, indent=2)
+                    
+                    # Check if we have any data in the chain
+                    if not chain_data:
+                        print("No option chain data available for the selected criteria")
+                        print(f"Full response: {chain_response.text}")
+                        
+                        # Try with a different date format (some APIs require YYYYMMDD)
+                        if '-' in selected_expiry:
+                            alt_date = selected_expiry.replace('-', '')
+                            print(f"Trying alternative date format: {alt_date}")
+                            
+                            alt_chain_params = {
+                                'instrument_key': index_key,
+                                'expiry_date': alt_date
+                            }
+                            
+                            alt_chain_response = requests.get(chain_url, headers=headers, params=alt_chain_params)
+                            print(f"Alternative format response: {alt_chain_response.status_code}")
+                            
+                            if alt_chain_response.status_code == 200:
+                                alt_chain_data = alt_chain_response.json().get('data', [])
+                                if alt_chain_data:
+                                    print(f"Alternative format successful! Data length: {len(alt_chain_data)}")
+                                    chain_data = alt_chain_data
+                                else:
+                                    print("Alternative format also returned no data")
+                        
+                        # If still no data, show error message
+                        if not chain_data:
+                            # Clear any existing flashed messages to prevent duplication
+                            session.pop('_flashes', None)
+                            flash("No option chain data available for the selected criteria. "
+                                "This could be due to:<br>"
+                                "• The selected expiry date may not have options available<br>"
+                                "• The API may be experiencing issues<br>"
+                                "• The market may be closed<br>"
+                                "• Your Upstox connection may need to be refreshed", 'error')
+                            return render_template('option_chain.html', 
+                                                username=current_user.username,
+                                                access_token=access_token,
+                                                option_data=[],
+                                                spot_price=spot_price,
+                                                available_expiries=available_expiries,
+                                                selected_expiry=selected_expiry,
+                                                pcr=None,
+                                                atm_strike=None,
+                                                selected_index=selected_index,
+                                                index_display_name=index_display_name)
+                    
+                    # Process the option chain data
+                    processed_data = []
+                    
+                    for option in chain_data:
+                        # Extract data from the API response
+                        strike_price = option.get('strike_price', 0)
+                        
+                        # Get call option data
+                        call_options = option.get('call_options', {})
+                        call_market_data = call_options.get('market_data', {}) if call_options else {}
+                        call_greeks = call_options.get('option_greeks', {}) if call_options else {}
+                        
+                        # Get put option data
+                        put_options = option.get('put_options', {})
+                        put_market_data = put_options.get('market_data', {}) if put_options else {}
+                        put_greeks = put_options.get('option_greeks', {}) if put_options else {}
+                        
+                        # Create a structured option data object
+                        # In your option chain route, update the option_item dictionary creation:
+                        
+                        option_item = {
+                            'strike_price': strike_price,
+                            'call_oi': call_market_data.get('oi', 0),
+                            'call_volume': call_market_data.get('volume', 0),
+                            'call_ltp': call_market_data.get('ltp', 0),
+                            'call_change': 0,  # Not directly available in the API
+                            'call_iv': call_greeks.get('iv', 0),
+                            'call_delta': call_greeks.get('delta', 0),
+                            'call_gamma': call_greeks.get('gamma', 0),
+                            'call_theta': call_greeks.get('theta', 0),
+                            'call_vega': call_greeks.get('vega', 0),
+                            'call_pop': call_greeks.get('pop', 0),  # Add POP (Probability of Profit)
+                            'put_oi': put_market_data.get('oi', 0),
+                            'put_volume': put_market_data.get('volume', 0),
+                            'put_ltp': put_market_data.get('ltp', 0),
+                            'put_change': 0,  # Not directly available in the API
+                            'put_iv': put_greeks.get('iv', 0),
+                            'put_delta': put_greeks.get('delta', 0),
+                            'put_gamma': put_greeks.get('gamma', 0),
+                            'put_theta': put_greeks.get('theta', 0),
+                            'put_vega': put_greeks.get('vega', 0),
+                            'put_pop': put_greeks.get('pop', 0)  # Add POP (Probability of Profit)
+                        }
+                        
+                        processed_data.append(option_item)
+                    
+                    # Sort by strike price
+                    option_data = sorted(processed_data, key=lambda x: x['strike_price'])
+                    
+                    # Find ATM strike (closest to spot price)
+                    if spot_price and option_data:
+                        strikes = [option['strike_price'] for option in option_data]
+                        atm_index = min(range(len(strikes)), key=lambda i: abs(strikes[i] - spot_price))
+                        atm_strike = strikes[atm_index]
+                        
+                        # Limit to 15 strikes above and below ATM (instead of 10)
+                        atm_index = next((i for i, item in enumerate(option_data) if item['strike_price'] == atm_strike), 0)
+                        start_index = max(0, atm_index - 15)
+                        end_index = min(len(option_data), atm_index + 16)  # +16 to include the ATM strike
+                        option_data = option_data[start_index:end_index]
+                    
+                    # Calculate PCR (Put-Call Ratio) based on total OI
+                    if option_data:
+                        total_call_oi = sum(option['call_oi'] for option in option_data)
+                        total_put_oi = sum(option['put_oi'] for option in option_data)
+                        pcr = total_put_oi / total_call_oi if total_call_oi > 0 else 0
+                        pcr = round(pcr, 2)  # Round to 2 decimal places
+                
+                else:
+                    print(f"API Error: Status {chain_response.status_code}, Response: {chain_response.text}")
+                    flash('Error fetching option chain data')
+                    
         except Exception as e:
             print(f"Error in option chain route: {str(e)}")
             flash('Error fetching option chain data')
@@ -256,7 +426,9 @@ def option_chain():
                          available_expiries=available_expiries,
                          selected_expiry=selected_expiry,
                          pcr=pcr,
-                         atm_strike=atm_strike)
+                         atm_strike=atm_strike,
+                         selected_index=selected_index,
+                         index_display_name=index_display_name)
 
 @app.route('/market')
 @login_required

@@ -1,0 +1,7653 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "expiry": "2025-04-08",
+      "pcr": 7192.6,
+      "strike_price": 68000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|877919",
+        "market_data": {
+          "ltp": 7614.2,
+          "volume": 1300,
+          "oi": 100.0,
+          "close_price": 8355.9,
+          "bid_price": 7292.45,
+          "bid_qty": 100,
+          "ask_price": 7456.2,
+          "ask_qty": 100,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 12.9289,
+          "theta": -122.4729,
+          "gamma": 0.0,
+          "delta": 0.9089,
+          "iv": 75.78,
+          "pop": 46.68
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|877525",
+        "market_data": {
+          "ltp": 0.9,
+          "volume": 2883760,
+          "oi": 719260.0,
+          "close_price": 1.3,
+          "bid_price": 0.9,
+          "bid_qty": 16380,
+          "ask_price": 0.95,
+          "ask_qty": 4440,
+          "prev_oi": 438720.0
+        },
+        "option_greeks": {
+          "vega": 0.3342,
+          "theta": -1.3665,
+          "gamma": 0.0,
+          "delta": -0.0013,
+          "iv": 32.71,
+          "pop": 0.14
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|877293",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 8255.95,
+          "bid_price": 6400.0,
+          "bid_qty": 200,
+          "ask_price": 9000.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|877346",
+        "market_data": {
+          "ltp": 0.85,
+          "volume": 137060,
+          "oi": 7280.0,
+          "close_price": 1.5,
+          "bid_price": 0.8,
+          "bid_qty": 8760,
+          "ask_price": 1.8,
+          "ask_qty": 80,
+          "prev_oi": 5900.0
+        },
+        "option_greeks": {
+          "vega": 0.2893,
+          "theta": -1.1475,
+          "gamma": 0.0,
+          "delta": -0.0011,
+          "iv": 31.74,
+          "pop": 0.12
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|875974",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 8156.05,
+          "bid_price": 5900.0,
+          "bid_qty": 400,
+          "ask_price": 9500.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876231",
+        "market_data": {
+          "ltp": 1.0,
+          "volume": 14480,
+          "oi": 3940.0,
+          "close_price": 1.35,
+          "bid_price": 0.9,
+          "bid_qty": 1540,
+          "ask_price": 1.0,
+          "ask_qty": 200,
+          "prev_oi": 2480.0
+        },
+        "option_greeks": {
+          "vega": 0.4312,
+          "theta": -1.7632,
+          "gamma": 0.0,
+          "delta": -0.0017,
+          "iv": 32.71,
+          "pop": 0.19
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876361",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 8056.15,
+          "bid_price": 5800.0,
+          "bid_qty": 400,
+          "ask_price": 9400.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876601",
+        "market_data": {
+          "ltp": 0.95,
+          "volume": 39320,
+          "oi": 2740.0,
+          "close_price": 1.5,
+          "bid_price": 0.95,
+          "bid_qty": 1720,
+          "ask_price": 2.7,
+          "ask_qty": 1000,
+          "prev_oi": 1540.0
+        },
+        "option_greeks": {
+          "vega": 0.3527,
+          "theta": -1.3884,
+          "gamma": 0.0,
+          "delta": -0.0014,
+          "iv": 31.49,
+          "pop": 0.15
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876060",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7956.25,
+          "bid_price": 5700.0,
+          "bid_qty": 400,
+          "ask_price": 9300.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876322",
+        "market_data": {
+          "ltp": 0.95,
+          "volume": 14460,
+          "oi": 1680.0,
+          "close_price": 1.3,
+          "bid_price": 0.9,
+          "bid_qty": 1900,
+          "ask_price": 2.75,
+          "ask_qty": 1000,
+          "prev_oi": 580.0
+        },
+        "option_greeks": {
+          "vega": 0.5854,
+          "theta": -2.4117,
+          "gamma": 0.0,
+          "delta": -0.0024,
+          "iv": 32.96,
+          "pop": 0.26
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876420",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7856.3,
+          "bid_price": 6312.0,
+          "bid_qty": 200,
+          "ask_price": 7488.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876016",
+        "market_data": {
+          "ltp": 0.95,
+          "volume": 1588080,
+          "oi": 68620.0,
+          "close_price": 1.45,
+          "bid_price": 0.95,
+          "bid_qty": 4420,
+          "ask_price": 1.55,
+          "ask_qty": 140,
+          "prev_oi": 60500.0
+        },
+        "option_greeks": {
+          "vega": 0.4013,
+          "theta": -1.5554,
+          "gamma": 0.0,
+          "delta": -0.0016,
+          "iv": 31.01,
+          "pop": 0.17
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876124",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7756.4,
+          "bid_price": 5500.0,
+          "bid_qty": 400,
+          "ask_price": 9100.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876394",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 12820,
+          "oi": 3760.0,
+          "close_price": 1.45,
+          "bid_price": 0.9,
+          "bid_qty": 3000,
+          "ask_price": 1.55,
+          "ask_qty": 20,
+          "prev_oi": 1040.0
+        },
+        "option_greeks": {
+          "vega": 0.4579,
+          "theta": -1.7745,
+          "gamma": 0.0,
+          "delta": -0.0018,
+          "iv": 31.01,
+          "pop": 0.2
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|877039",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7656.5,
+          "bid_price": 5400.0,
+          "bid_qty": 400,
+          "ask_price": 9000.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876088",
+        "market_data": {
+          "ltp": 3.75,
+          "volume": 5840,
+          "oi": 820.0,
+          "close_price": 2.85,
+          "bid_price": 0.7,
+          "bid_qty": 1000,
+          "ask_price": 1.85,
+          "ask_qty": 200,
+          "prev_oi": 300.0
+        },
+        "option_greeks": {
+          "vega": 1.0182,
+          "theta": -4.3191,
+          "gamma": 0.0,
+          "delta": -0.0044,
+          "iv": 33.94,
+          "pop": 0.49
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876199",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7556.6,
+          "bid_price": 5300.0,
+          "bid_qty": 400,
+          "ask_price": 8900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876449",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 0.05,
+          "bid_price": 0.75,
+          "bid_qty": 900,
+          "ask_price": 2.4,
+          "ask_qty": 900,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 0.0,
+          "iv": 0.0,
+          "pop": 0.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 68900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|877119",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7456.7,
+          "bid_price": 5200.0,
+          "bid_qty": 400,
+          "ask_price": 8800.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876160",
+        "market_data": {
+          "ltp": 1.0,
+          "volume": 32420,
+          "oi": 3060.0,
+          "close_price": 1.75,
+          "bid_price": 0.85,
+          "bid_qty": 380,
+          "ask_price": 1.65,
+          "ask_qty": 260,
+          "prev_oi": 3200.0
+        },
+        "option_greeks": {
+          "vega": 0.3954,
+          "theta": -1.436,
+          "gamma": 0.0,
+          "delta": -0.0015,
+          "iv": 29.05,
+          "pop": 0.17
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876609",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7356.75,
+          "bid_price": 5812.0,
+          "bid_qty": 200,
+          "ask_price": 6988.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876865",
+        "market_data": {
+          "ltp": 1.05,
+          "volume": 1418020,
+          "oi": 83000.0,
+          "close_price": 1.6,
+          "bid_price": 1.05,
+          "bid_qty": 9960,
+          "ask_price": 1.25,
+          "ask_qty": 120,
+          "prev_oi": 104720.0
+        },
+        "option_greeks": {
+          "vega": 0.439,
+          "theta": -1.5875,
+          "gamma": 0.0,
+          "delta": -0.0017,
+          "iv": 28.93,
+          "pop": 0.19
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876982",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7256.85,
+          "bid_price": 5000.0,
+          "bid_qty": 400,
+          "ask_price": 8600.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876039",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 0.05,
+          "bid_price": 0.7,
+          "bid_qty": 900,
+          "ask_price": 2.5,
+          "ask_qty": 100,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 0.0,
+          "iv": 0.0,
+          "pop": 0.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876673",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7156.95,
+          "bid_price": 4400.0,
+          "bid_qty": 400,
+          "ask_price": 8400.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876946",
+        "market_data": {
+          "ltp": 0.8,
+          "volume": 4740,
+          "oi": 1080.0,
+          "close_price": 1.75,
+          "bid_price": 0.8,
+          "bid_qty": 540,
+          "ask_price": 1.9,
+          "ask_qty": 200,
+          "prev_oi": 940.0
+        },
+        "option_greeks": {
+          "vega": 0.3325,
+          "theta": -1.1264,
+          "gamma": 0.0,
+          "delta": -0.0013,
+          "iv": 27.1,
+          "pop": 0.14
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|877058",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 7057.05,
+          "bid_price": 4400.0,
+          "bid_qty": 400,
+          "ask_price": 8300.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|876643",
+        "market_data": {
+          "ltp": 0.8,
+          "volume": 7980,
+          "oi": 640.0,
+          "close_price": 1.85,
+          "bid_price": 0.8,
+          "bid_qty": 860,
+          "ask_price": 1.25,
+          "ask_qty": 160,
+          "prev_oi": 700.0
+        },
+        "option_greeks": {
+          "vega": 0.3576,
+          "theta": -1.2004,
+          "gamma": 0.0,
+          "delta": -0.0014,
+          "iv": 26.86,
+          "pop": 0.15
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|876754",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6957.1,
+          "bid_price": 4200.0,
+          "bid_qty": 400,
+          "ask_price": 8300.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|877019",
+        "market_data": {
+          "ltp": 2.65,
+          "volume": 480,
+          "oi": 200.0,
+          "close_price": 0.05,
+          "bid_price": 1.0,
+          "bid_qty": 1000,
+          "ask_price": 1.9,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.8757,
+          "theta": -3.2337,
+          "gamma": 0.0,
+          "delta": -0.0037,
+          "iv": 29.54,
+          "pop": 0.41
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874339",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6857.2,
+          "bid_price": 5312.0,
+          "bid_qty": 200,
+          "ask_price": 6488.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874416",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 698300,
+          "oi": 75280.0,
+          "close_price": 1.75,
+          "bid_price": 1.1,
+          "bid_qty": 160,
+          "ask_price": 1.5,
+          "ask_qty": 2000,
+          "prev_oi": 41940.0
+        },
+        "option_greeks": {
+          "vega": 0.4479,
+          "theta": -1.49,
+          "gamma": 0.0,
+          "delta": -0.0018,
+          "iv": 26.61,
+          "pop": 0.19
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874458",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6757.3,
+          "bid_price": 4000.0,
+          "bid_qty": 400,
+          "ask_price": 8000.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874535",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 23540,
+          "oi": 1760.0,
+          "close_price": 2.0,
+          "bid_price": 0.8,
+          "bid_qty": 1420,
+          "ask_price": 1.5,
+          "ask_qty": 780,
+          "prev_oi": 80.0
+        },
+        "option_greeks": {
+          "vega": 0.52,
+          "theta": -1.7298,
+          "gamma": 0.0,
+          "delta": -0.0021,
+          "iv": 26.61,
+          "pop": 0.23
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874357",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6657.4,
+          "bid_price": 4000.0,
+          "bid_qty": 400,
+          "ask_price": 7900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874441",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 52120,
+          "oi": 7140.0,
+          "close_price": 2.0,
+          "bid_price": 0.85,
+          "bid_qty": 780,
+          "ask_price": 1.1,
+          "ask_qty": 80,
+          "prev_oi": 1980.0
+        },
+        "option_greeks": {
+          "vega": 0.4442,
+          "theta": -1.4232,
+          "gamma": 0.0,
+          "delta": -0.0018,
+          "iv": 25.63,
+          "pop": 0.19
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874474",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6557.5,
+          "bid_price": 3800.0,
+          "bid_qty": 400,
+          "ask_price": 7900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874348",
+        "market_data": {
+          "ltp": 0.9,
+          "volume": 106280,
+          "oi": 6260.0,
+          "close_price": 2.05,
+          "bid_price": 0.9,
+          "bid_qty": 440,
+          "ask_price": 1.7,
+          "ask_qty": 20,
+          "prev_oi": 1400.0
+        },
+        "option_greeks": {
+          "vega": 0.4066,
+          "theta": -1.2656,
+          "gamma": 0.0,
+          "delta": -0.0016,
+          "iv": 24.9,
+          "pop": 0.17
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 69900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874381",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6457.55,
+          "bid_price": 3600.0,
+          "bid_qty": 400,
+          "ask_price": 7800.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874469",
+        "market_data": {
+          "ltp": 1.5,
+          "volume": 68240,
+          "oi": 4700.0,
+          "close_price": 2.15,
+          "bid_price": 0.95,
+          "bid_qty": 300,
+          "ask_price": 1.4,
+          "ask_qty": 300,
+          "prev_oi": 6340.0
+        },
+        "option_greeks": {
+          "vega": 0.6031,
+          "theta": -1.9324,
+          "gamma": 0.0,
+          "delta": -0.0025,
+          "iv": 25.63,
+          "pop": 0.27
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874306",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6357.65,
+          "bid_price": 4812.0,
+          "bid_qty": 200,
+          "ask_price": 5988.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874382",
+        "market_data": {
+          "ltp": 1.15,
+          "volume": 2297900,
+          "oi": 527720.0,
+          "close_price": 2.1,
+          "bid_price": 1.15,
+          "bid_qty": 700,
+          "ask_price": 1.3,
+          "ask_qty": 60,
+          "prev_oi": 288360.0
+        },
+        "option_greeks": {
+          "vega": 0.5586,
+          "theta": -1.7387,
+          "gamma": 0.0,
+          "delta": -0.0023,
+          "iv": 24.9,
+          "pop": 0.24
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874420",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6257.75,
+          "bid_price": 4000.0,
+          "bid_qty": 400,
+          "ask_price": 7600.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874293",
+        "market_data": {
+          "ltp": 1.9,
+          "volume": 60860,
+          "oi": 5420.0,
+          "close_price": 0.05,
+          "bid_price": 1.0,
+          "bid_qty": 20,
+          "ask_price": 2.1,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.7543,
+          "theta": -2.3939,
+          "gamma": 0.0,
+          "delta": -0.0032,
+          "iv": 25.39,
+          "pop": 0.34
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874330",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6157.85,
+          "bid_price": 3500.0,
+          "bid_qty": 400,
+          "ask_price": 7500.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874413",
+        "market_data": {
+          "ltp": 1.2,
+          "volume": 147960,
+          "oi": 19340.0,
+          "close_price": 2.4,
+          "bid_price": 1.2,
+          "bid_qty": 140,
+          "ask_price": 2.1,
+          "ask_qty": 200,
+          "prev_oi": 4920.0
+        },
+        "option_greeks": {
+          "vega": 0.5346,
+          "theta": -1.5908,
+          "gamma": 0.0,
+          "delta": -0.0022,
+          "iv": 23.8,
+          "pop": 0.23
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873990",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6057.95,
+          "bid_price": 3400.0,
+          "bid_qty": 400,
+          "ask_price": 7400.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874036",
+        "market_data": {
+          "ltp": 1.05,
+          "volume": 92840,
+          "oi": 6940.0,
+          "close_price": 2.5,
+          "bid_price": 1.05,
+          "bid_qty": 900,
+          "ask_price": 2.1,
+          "ask_qty": 200,
+          "prev_oi": 6280.0
+        },
+        "option_greeks": {
+          "vega": 0.4893,
+          "theta": -1.411,
+          "gamma": 0.0,
+          "delta": -0.002,
+          "iv": 23.07,
+          "pop": 0.21
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874060",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5958.0,
+          "bid_price": 3400.0,
+          "bid_qty": 400,
+          "ask_price": 7300.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874106",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 70260,
+          "oi": 4680.0,
+          "close_price": 2.55,
+          "bid_price": 1.1,
+          "bid_qty": 1180,
+          "ask_price": 2.0,
+          "ask_qty": 200,
+          "prev_oi": 5000.0
+        },
+        "option_greeks": {
+          "vega": 0.5088,
+          "theta": -1.4442,
+          "gamma": 0.0,
+          "delta": -0.002,
+          "iv": 22.71,
+          "pop": 0.22
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874004",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5858.1,
+          "bid_price": 4312.0,
+          "bid_qty": 200,
+          "ask_price": 5488.0,
+          "ask_qty": 300,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|874050",
+        "market_data": {
+          "ltp": 1.7,
+          "volume": 1069880,
+          "oi": 91220.0,
+          "close_price": 2.45,
+          "bid_price": 1.3,
+          "bid_qty": 820,
+          "ask_price": 1.6,
+          "ask_qty": 260,
+          "prev_oi": 86640.0
+        },
+        "option_greeks": {
+          "vega": 0.7384,
+          "theta": -2.1521,
+          "gamma": 0.0,
+          "delta": -0.0031,
+          "iv": 23.32,
+          "pop": 0.33
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|874076",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5758.2,
+          "bid_price": 3100.0,
+          "bid_qty": 400,
+          "ask_price": 6900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873998",
+        "market_data": {
+          "ltp": 1.4,
+          "volume": 140800,
+          "oi": 21840.0,
+          "close_price": 2.5,
+          "bid_price": 1.4,
+          "bid_qty": 180,
+          "ask_price": 1.7,
+          "ask_qty": 540,
+          "prev_oi": 3380.0
+        },
+        "option_greeks": {
+          "vega": 0.6557,
+          "theta": -1.8411,
+          "gamma": 0.0,
+          "delta": -0.0027,
+          "iv": 22.46,
+          "pop": 0.29
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873759",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5658.3,
+          "bid_price": 3100.0,
+          "bid_qty": 400,
+          "ask_price": 7000.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873812",
+        "market_data": {
+          "ltp": 1.4,
+          "volume": 158520,
+          "oi": 25280.0,
+          "close_price": 2.6,
+          "bid_price": 1.35,
+          "bid_qty": 6040,
+          "ask_price": 2.35,
+          "ask_qty": 200,
+          "prev_oi": 1100.0
+        },
+        "option_greeks": {
+          "vega": 0.6562,
+          "theta": -1.8022,
+          "gamma": 0.0,
+          "delta": -0.0027,
+          "iv": 21.97,
+          "pop": 0.29
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873703",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5558.35,
+          "bid_price": 3000.0,
+          "bid_qty": 400,
+          "ask_price": 6900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873749",
+        "market_data": {
+          "ltp": 1.35,
+          "volume": 354780,
+          "oi": 55720.0,
+          "close_price": 2.75,
+          "bid_price": 1.35,
+          "bid_qty": 4640,
+          "ask_price": 2.35,
+          "ask_qty": 200,
+          "prev_oi": 16560.0
+        },
+        "option_greeks": {
+          "vega": 0.8419,
+          "theta": -2.338,
+          "gamma": 0.0,
+          "delta": -0.0036,
+          "iv": 22.22,
+          "pop": 0.38
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 70900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873616",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5458.45,
+          "bid_price": 2900.0,
+          "bid_qty": 400,
+          "ask_price": 6800.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873538",
+        "market_data": {
+          "ltp": 1.65,
+          "volume": 234600,
+          "oi": 25900.0,
+          "close_price": 2.8,
+          "bid_price": 1.45,
+          "bid_qty": 2020,
+          "ask_price": 1.7,
+          "ask_qty": 200,
+          "prev_oi": 12620.0
+        },
+        "option_greeks": {
+          "vega": 0.7801,
+          "theta": -2.0948,
+          "gamma": 0.0,
+          "delta": -0.0033,
+          "iv": 21.48,
+          "pop": 0.35
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873481",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5358.55,
+          "bid_price": 3812.0,
+          "bid_qty": 200,
+          "ask_price": 4988.0,
+          "ask_qty": 300,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873112",
+        "market_data": {
+          "ltp": 1.75,
+          "volume": 4143880,
+          "oi": 405480.0,
+          "close_price": 2.7,
+          "bid_price": 1.85,
+          "bid_qty": 160,
+          "ask_price": 2.1,
+          "ask_qty": 320,
+          "prev_oi": 427300.0
+        },
+        "option_greeks": {
+          "vega": 0.8168,
+          "theta": -2.1561,
+          "gamma": 0.0,
+          "delta": -0.0034,
+          "iv": 21.12,
+          "pop": 0.37
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873359",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5258.65,
+          "bid_price": 2800.0,
+          "bid_qty": 400,
+          "ask_price": 6600.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873464",
+        "market_data": {
+          "ltp": 1.6,
+          "volume": 880120,
+          "oi": 176460.0,
+          "close_price": 2.6,
+          "bid_price": 1.6,
+          "bid_qty": 880,
+          "ask_price": 1.65,
+          "ask_qty": 20,
+          "prev_oi": 176640.0
+        },
+        "option_greeks": {
+          "vega": 0.7859,
+          "theta": -2.0146,
+          "gamma": 0.0,
+          "delta": -0.0033,
+          "iv": 20.51,
+          "pop": 0.35
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873515",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5158.75,
+          "bid_price": 2200.0,
+          "bid_qty": 400,
+          "ask_price": 6500.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873143",
+        "market_data": {
+          "ltp": 1.65,
+          "volume": 344760,
+          "oi": 39660.0,
+          "close_price": 2.85,
+          "bid_price": 1.65,
+          "bid_qty": 320,
+          "ask_price": 2.0,
+          "ask_qty": 380,
+          "prev_oi": 29120.0
+        },
+        "option_greeks": {
+          "vega": 0.7888,
+          "theta": -1.9738,
+          "gamma": 0.0,
+          "delta": -0.0033,
+          "iv": 20.02,
+          "pop": 0.35
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873394",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5058.8,
+          "bid_price": 2300.05,
+          "bid_qty": 400,
+          "ask_price": 6399.95,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873499",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 368420,
+          "oi": 22600.0,
+          "close_price": 3.0,
+          "bid_price": 1.3,
+          "bid_qty": 180,
+          "ask_price": 2.15,
+          "ask_qty": 40,
+          "prev_oi": 28160.0
+        },
+        "option_greeks": {
+          "vega": 0.6874,
+          "theta": -1.6467,
+          "gamma": 0.0,
+          "delta": -0.0028,
+          "iv": 19.17,
+          "pop": 0.3
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873074",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4958.9,
+          "bid_price": 2200.05,
+          "bid_qty": 400,
+          "ask_price": 6100.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873377",
+        "market_data": {
+          "ltp": 1.6,
+          "volume": 376980,
+          "oi": 27920.0,
+          "close_price": 3.25,
+          "bid_price": 1.4,
+          "bid_qty": 900,
+          "ask_price": 2.3,
+          "ask_qty": 500,
+          "prev_oi": 25620.0
+        },
+        "option_greeks": {
+          "vega": 0.8318,
+          "theta": -1.9927,
+          "gamma": 0.0,
+          "delta": -0.0035,
+          "iv": 19.17,
+          "pop": 0.37
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 23802.0,
+      "strike_price": 71500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873428",
+        "market_data": {
+          "ltp": 5025.4,
+          "volume": 0,
+          "oi": 20.0,
+          "close_price": 4859.0,
+          "bid_price": 3312.0,
+          "bid_qty": 200,
+          "ask_price": 4488.0,
+          "ask_qty": 300,
+          "prev_oi": 20.0
+        },
+        "option_greeks": {
+          "vega": 26.4951,
+          "theta": -296.4341,
+          "gamma": 0.0,
+          "delta": 0.7217,
+          "iv": 89.91,
+          "pop": 41.05
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873056",
+        "market_data": {
+          "ltp": 1.9,
+          "volume": 3477140,
+          "oi": 476040.0,
+          "close_price": 3.2,
+          "bid_price": 1.75,
+          "bid_qty": 60,
+          "ask_price": 1.9,
+          "ask_qty": 8800,
+          "prev_oi": 224780.0
+        },
+        "option_greeks": {
+          "vega": 0.9584,
+          "theta": -2.2813,
+          "gamma": 0.0,
+          "delta": -0.0041,
+          "iv": 19.04,
+          "pop": 0.43
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873297",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4759.1,
+          "bid_price": 2300.1,
+          "bid_qty": 400,
+          "ask_price": 5899.95,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873411",
+        "market_data": {
+          "ltp": 2.0,
+          "volume": 538420,
+          "oi": 47880.0,
+          "close_price": 3.55,
+          "bid_price": 2.25,
+          "bid_qty": 160,
+          "ask_price": 2.65,
+          "ask_qty": 200,
+          "prev_oi": 30800.0
+        },
+        "option_greeks": {
+          "vega": 1.0103,
+          "theta": -2.3587,
+          "gamma": 0.0,
+          "delta": -0.0044,
+          "iv": 18.68,
+          "pop": 0.46
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873455",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4659.2,
+          "bid_price": 2200.05,
+          "bid_qty": 400,
+          "ask_price": 5600.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873090",
+        "market_data": {
+          "ltp": 2.5,
+          "volume": 685740,
+          "oi": 82880.0,
+          "close_price": 3.65,
+          "bid_price": 1.95,
+          "bid_qty": 320,
+          "ask_price": 2.5,
+          "ask_qty": 260,
+          "prev_oi": 34460.0
+        },
+        "option_greeks": {
+          "vega": 1.2152,
+          "theta": -2.837,
+          "gamma": 0.0,
+          "delta": -0.0054,
+          "iv": 18.68,
+          "pop": 0.56
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873334",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4559.25,
+          "bid_price": 2200.05,
+          "bid_qty": 400,
+          "ask_price": 5400.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873441",
+        "market_data": {
+          "ltp": 1.95,
+          "volume": 1021100,
+          "oi": 69500.0,
+          "close_price": 4.0,
+          "bid_price": 1.95,
+          "bid_qty": 920,
+          "ask_price": 3.0,
+          "ask_qty": 400,
+          "prev_oi": 15920.0
+        },
+        "option_greeks": {
+          "vega": 1.0288,
+          "theta": -2.2761,
+          "gamma": 0.0,
+          "delta": -0.0045,
+          "iv": 17.7,
+          "pop": 0.47
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 71900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873489",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4459.35,
+          "bid_price": 2200.05,
+          "bid_qty": 400,
+          "ask_price": 5300.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873314",
+        "market_data": {
+          "ltp": 2.5,
+          "volume": 937280,
+          "oi": 36500.0,
+          "close_price": 4.15,
+          "bid_price": 2.5,
+          "bid_qty": 620,
+          "ask_price": 2.6,
+          "ask_qty": 980,
+          "prev_oi": 37560.0
+        },
+        "option_greeks": {
+          "vega": 1.2486,
+          "theta": -2.7624,
+          "gamma": 0.0,
+          "delta": -0.0055,
+          "iv": 17.7,
+          "pop": 0.58
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 2289.5294,
+      "strike_price": 72000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873274",
+        "market_data": {
+          "ltp": 3270.0,
+          "volume": 340,
+          "oi": 340.0,
+          "close_price": 4359.45,
+          "bid_price": 3307.2,
+          "bid_qty": 60,
+          "ask_price": 3443.8,
+          "ask_qty": 60,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873385",
+        "market_data": {
+          "ltp": 2.5,
+          "volume": 7317840,
+          "oi": 778440.0,
+          "close_price": 4.45,
+          "bid_price": 2.5,
+          "bid_qty": 140,
+          "ask_price": 2.85,
+          "ask_qty": 720,
+          "prev_oi": 715940.0
+        },
+        "option_greeks": {
+          "vega": 1.3244,
+          "theta": -2.8696,
+          "gamma": 0.0,
+          "delta": -0.0059,
+          "iv": 17.33,
+          "pop": 0.62
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873165",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4259.55,
+          "bid_price": 2000.05,
+          "bid_qty": 400,
+          "ask_price": 4800.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873254",
+        "market_data": {
+          "ltp": 3.5,
+          "volume": 866720,
+          "oi": 48320.0,
+          "close_price": 4.95,
+          "bid_price": 2.65,
+          "bid_qty": 160,
+          "ask_price": 3.5,
+          "ask_qty": 80,
+          "prev_oi": 32660.0
+        },
+        "option_greeks": {
+          "vega": 1.6682,
+          "theta": -3.64,
+          "gamma": 0.0,
+          "delta": -0.0077,
+          "iv": 17.46,
+          "pop": 0.8
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873309",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4159.65,
+          "bid_price": 1900.05,
+          "bid_qty": 400,
+          "ask_price": 4700.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873155",
+        "market_data": {
+          "ltp": 4.0,
+          "volume": 960400,
+          "oi": 61160.0,
+          "close_price": 5.25,
+          "bid_price": 2.75,
+          "bid_qty": 1260,
+          "ask_price": 4.0,
+          "ask_qty": 1180,
+          "prev_oi": 29220.0
+        },
+        "option_greeks": {
+          "vega": 1.7041,
+          "theta": -3.6144,
+          "gamma": 0.0,
+          "delta": -0.0079,
+          "iv": 16.97,
+          "pop": 0.82
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873182",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4059.75,
+          "bid_price": 1800.05,
+          "bid_qty": 400,
+          "ask_price": 4500.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873284",
+        "market_data": {
+          "ltp": 4.4,
+          "volume": 1161860,
+          "oi": 61740.0,
+          "close_price": 5.55,
+          "bid_price": 3.75,
+          "bid_qty": 820,
+          "ask_price": 4.35,
+          "ask_qty": 100,
+          "prev_oi": 45180.0
+        },
+        "option_greeks": {
+          "vega": 2.0507,
+          "theta": -4.3494,
+          "gamma": 0.0,
+          "delta": -0.0097,
+          "iv": 16.97,
+          "pop": 1.01
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873096",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3959.85,
+          "bid_price": 1700.05,
+          "bid_qty": 400,
+          "ask_price": 4500.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873175",
+        "market_data": {
+          "ltp": 2.85,
+          "volume": 931120,
+          "oi": 38580.0,
+          "close_price": 6.1,
+          "bid_price": 3.5,
+          "bid_qty": 600,
+          "ask_price": 4.95,
+          "ask_qty": 120,
+          "prev_oi": 29100.0
+        },
+        "option_greeks": {
+          "vega": 1.5575,
+          "theta": -3.042,
+          "gamma": 0.0,
+          "delta": -0.0071,
+          "iv": 15.63,
+          "pop": 0.74
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873213",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3860.0,
+          "bid_price": 2312.0,
+          "bid_qty": 200,
+          "ask_price": 3488.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873323",
+        "market_data": {
+          "ltp": 4.3,
+          "volume": 6316360,
+          "oi": 537420.0,
+          "close_price": 6.6,
+          "bid_price": 4.3,
+          "bid_qty": 340,
+          "ask_price": 5.0,
+          "ask_qty": 100,
+          "prev_oi": 442760.0
+        },
+        "option_greeks": {
+          "vega": 2.1214,
+          "theta": -4.2242,
+          "gamma": 0.0,
+          "delta": -0.0101,
+          "iv": 15.93,
+          "pop": 1.05
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873121",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3760.1,
+          "bid_price": 1600.05,
+          "bid_qty": 400,
+          "ask_price": 4100.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873201",
+        "market_data": {
+          "ltp": 4.0,
+          "volume": 2013220,
+          "oi": 115620.0,
+          "close_price": 6.95,
+          "bid_price": 3.35,
+          "bid_qty": 500,
+          "ask_price": 6.35,
+          "ask_qty": 40,
+          "prev_oi": 60400.0
+        },
+        "option_greeks": {
+          "vega": 2.0476,
+          "theta": -3.9055,
+          "gamma": 0.0,
+          "delta": -0.0097,
+          "iv": 15.26,
+          "pop": 1.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873244",
+        "market_data": {
+          "ltp": 1187.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3660.25,
+          "bid_price": 1500.0,
+          "bid_qty": 400,
+          "ask_price": 3900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873107",
+        "market_data": {
+          "ltp": 5.0,
+          "volume": 1765200,
+          "oi": 98000.0,
+          "close_price": 7.65,
+          "bid_price": 5.0,
+          "bid_qty": 440,
+          "ask_price": 6.0,
+          "ask_qty": 240,
+          "prev_oi": 47020.0
+        },
+        "option_greeks": {
+          "vega": 2.4453,
+          "theta": -4.6453,
+          "gamma": 0.0,
+          "delta": -0.0119,
+          "iv": 15.2,
+          "pop": 1.23
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873149",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3560.4,
+          "bid_price": 1400.05,
+          "bid_qty": 400,
+          "ask_price": 3900.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873230",
+        "market_data": {
+          "ltp": 7.2,
+          "volume": 2187480,
+          "oi": 139560.0,
+          "close_price": 8.05,
+          "bid_price": 5.85,
+          "bid_qty": 540,
+          "ask_price": 7.05,
+          "ask_qty": 200,
+          "prev_oi": 89760.0
+        },
+        "option_greeks": {
+          "vega": 3.2164,
+          "theta": -6.2207,
+          "gamma": 0.0,
+          "delta": -0.0163,
+          "iv": 15.47,
+          "pop": 1.68
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 72900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873507",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3460.6,
+          "bid_price": 1400.05,
+          "bid_qty": 400,
+          "ask_price": 3700.0,
+          "ask_qty": 400,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873136",
+        "market_data": {
+          "ltp": 7.0,
+          "volume": 2358140,
+          "oi": 93200.0,
+          "close_price": 9.35,
+          "bid_price": 7.0,
+          "bid_qty": 4800,
+          "ask_price": 8.1,
+          "ask_qty": 200,
+          "prev_oi": 52640.0
+        },
+        "option_greeks": {
+          "vega": 3.2545,
+          "theta": -6.0584,
+          "gamma": 0.0,
+          "delta": -0.0166,
+          "iv": 14.89,
+          "pop": 1.7
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 468.2549,
+      "strike_price": 73000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873102",
+        "market_data": {
+          "ltp": 2301.75,
+          "volume": 120,
+          "oi": 2040.0,
+          "close_price": 3360.85,
+          "bid_price": 2363.05,
+          "bid_qty": 40,
+          "ask_price": 2403.05,
+          "ask_qty": 20,
+          "prev_oi": 1940.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873403",
+        "market_data": {
+          "ltp": 7.85,
+          "volume": 12089260,
+          "oi": 955240.0,
+          "close_price": 10.2,
+          "bid_price": 7.85,
+          "bid_qty": 120,
+          "ask_price": 9.8,
+          "ask_qty": 400,
+          "prev_oi": 756860.0
+        },
+        "option_greeks": {
+          "vega": 3.5822,
+          "theta": -6.5318,
+          "gamma": 0.0,
+          "delta": -0.0185,
+          "iv": 14.59,
+          "pop": 1.89
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 73100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873448",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3261.1,
+          "bid_price": 1100.0,
+          "bid_qty": 200,
+          "ask_price": 3400.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873085",
+        "market_data": {
+          "ltp": 10.2,
+          "volume": 2746780,
+          "oi": 156480.0,
+          "close_price": 11.65,
+          "bid_price": 9.5,
+          "bid_qty": 1040,
+          "ask_price": 10.85,
+          "ask_qty": 200,
+          "prev_oi": 89740.0
+        },
+        "option_greeks": {
+          "vega": 4.177,
+          "theta": -7.5606,
+          "gamma": 0.0,
+          "delta": -0.0222,
+          "iv": 14.48,
+          "pop": 2.26
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 73200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873328",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3161.45,
+          "bid_price": 1100.0,
+          "bid_qty": 200,
+          "ask_price": 3300.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873435",
+        "market_data": {
+          "ltp": 12.5,
+          "volume": 3487960,
+          "oi": 141780.0,
+          "close_price": 12.9,
+          "bid_price": 10.0,
+          "bid_qty": 1180,
+          "ask_price": 12.45,
+          "ask_qty": 200,
+          "prev_oi": 124160.0
+        },
+        "option_greeks": {
+          "vega": 5.1021,
+          "theta": -9.2936,
+          "gamma": 0.0001,
+          "delta": -0.0282,
+          "iv": 14.57,
+          "pop": 2.85
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 73300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873483",
+        "market_data": {
+          "ltp": 628.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3061.85,
+          "bid_price": 1020.0,
+          "bid_qty": 200,
+          "ask_price": 3100.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873113",
+        "market_data": {
+          "ltp": 13.8,
+          "volume": 3829720,
+          "oi": 144360.0,
+          "close_price": 14.65,
+          "bid_price": 12.5,
+          "bid_qty": 280,
+          "ask_price": 13.8,
+          "ask_qty": 500,
+          "prev_oi": 97860.0
+        },
+        "option_greeks": {
+          "vega": 5.5743,
+          "theta": -9.9197,
+          "gamma": 0.0001,
+          "delta": -0.0314,
+          "iv": 14.24,
+          "pop": 3.16
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 73400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873360",
+        "market_data": {
+          "ltp": 1900.0,
+          "volume": 80,
+          "oi": 0.0,
+          "close_price": 2882.25,
+          "bid_price": 1962.25,
+          "bid_qty": 20,
+          "ask_price": 2019.9,
+          "ask_qty": 20,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873465",
+        "market_data": {
+          "ltp": 16.0,
+          "volume": 3671180,
+          "oi": 88040.0,
+          "close_price": 16.55,
+          "bid_price": 14.0,
+          "bid_qty": 3620,
+          "ask_price": 16.0,
+          "ask_qty": 60,
+          "prev_oi": 85200.0
+        },
+        "option_greeks": {
+          "vega": 5.7958,
+          "theta": -9.9159,
+          "gamma": 0.0001,
+          "delta": -0.0329,
+          "iv": 13.69,
+          "pop": 3.3
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 73500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873516",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 2862.95,
+          "bid_price": 1011.6,
+          "bid_qty": 100,
+          "ask_price": 2788.4,
+          "ask_qty": 100,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873344",
+        "market_data": {
+          "ltp": 18.0,
+          "volume": 12580880,
+          "oi": 512840.0,
+          "close_price": 18.55,
+          "bid_price": 18.0,
+          "bid_qty": 880,
+          "ask_price": 19.25,
+          "ask_qty": 300,
+          "prev_oi": 639240.0
+        },
+        "option_greeks": {
+          "vega": 6.9179,
+          "theta": -11.8621,
+          "gamma": 0.0001,
+          "delta": -0.0409,
+          "iv": 13.72,
+          "pop": 4.06
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 4776.0,
+      "strike_price": 73600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873395",
+        "market_data": {
+          "ltp": 1650.25,
+          "volume": 160,
+          "oi": 20.0,
+          "close_price": 2763.75,
+          "bid_price": 1773.85,
+          "bid_qty": 60,
+          "ask_price": 1826.9,
+          "ask_qty": 20,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873501",
+        "market_data": {
+          "ltp": 21.9,
+          "volume": 4787020,
+          "oi": 95520.0,
+          "close_price": 20.95,
+          "bid_price": 20.65,
+          "bid_qty": 20,
+          "ask_price": 22.5,
+          "ask_qty": 20,
+          "prev_oi": 132660.0
+        },
+        "option_greeks": {
+          "vega": 7.9751,
+          "theta": -13.5837,
+          "gamma": 0.0001,
+          "delta": -0.0488,
+          "iv": 13.63,
+          "pop": 4.81
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 5459.0,
+      "strike_price": 73700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873264",
+        "market_data": {
+          "ltp": 1572.4,
+          "volume": 40,
+          "oi": 20.0,
+          "close_price": 2664.75,
+          "bid_price": 1679.45,
+          "bid_qty": 20,
+          "ask_price": 1725.4,
+          "ask_qty": 20,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873378",
+        "market_data": {
+          "ltp": 24.5,
+          "volume": 5649340,
+          "oi": 109180.0,
+          "close_price": 24.05,
+          "bid_price": 24.5,
+          "bid_qty": 700,
+          "ask_price": 25.9,
+          "ask_qty": 260,
+          "prev_oi": 91460.0
+        },
+        "option_greeks": {
+          "vega": 8.7509,
+          "theta": -14.5462,
+          "gamma": 0.0001,
+          "delta": -0.0548,
+          "iv": 13.3,
+          "pop": 5.37
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 2204.0,
+      "strike_price": 73800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873429",
+        "market_data": {
+          "ltp": 1538.35,
+          "volume": 1140,
+          "oi": 80.0,
+          "close_price": 2362.7,
+          "bid_price": 1583.2,
+          "bid_qty": 40,
+          "ask_price": 1620.6,
+          "ask_qty": 40,
+          "prev_oi": 20.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873057",
+        "market_data": {
+          "ltp": 28.05,
+          "volume": 6648820,
+          "oi": 176320.0,
+          "close_price": 26.9,
+          "bid_price": 28.05,
+          "bid_qty": 160,
+          "ask_price": 30.7,
+          "ask_qty": 80,
+          "prev_oi": 154580.0
+        },
+        "option_greeks": {
+          "vega": 9.9159,
+          "theta": -16.2935,
+          "gamma": 0.0001,
+          "delta": -0.0643,
+          "iv": 13.15,
+          "pop": 6.24
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "strike_price": 73900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873298",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 2467.45,
+          "bid_price": 710.0,
+          "bid_qty": 500,
+          "ask_price": 1535.2,
+          "ask_qty": 100,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": 1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873412",
+        "market_data": {
+          "ltp": 33.1,
+          "volume": 6819920,
+          "oi": 146880.0,
+          "close_price": 30.6,
+          "bid_price": 33.1,
+          "bid_qty": 20,
+          "ask_price": 35.0,
+          "ask_qty": 920,
+          "prev_oi": 84500.0
+        },
+        "option_greeks": {
+          "vega": 10.9078,
+          "theta": -17.4969,
+          "gamma": 0.0001,
+          "delta": -0.0727,
+          "iv": 12.83,
+          "pop": 7.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 146.0561,
+      "strike_price": 74000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873116",
+        "market_data": {
+          "ltp": 1419.4,
+          "volume": 14700,
+          "oi": 4280.0,
+          "close_price": 2369.35,
+          "bid_price": 1390.55,
+          "bid_qty": 40,
+          "ask_price": 1431.45,
+          "ask_qty": 40,
+          "prev_oi": 1400.0
+        },
+        "option_greeks": {
+          "vega": 15.523,
+          "theta": -28.4234,
+          "gamma": 0.0002,
+          "delta": 0.8828,
+          "iv": 14.65,
+          "pop": 47.39
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873195",
+        "market_data": {
+          "ltp": 41.0,
+          "volume": 21664180,
+          "oi": 625120.0,
+          "close_price": 34.5,
+          "bid_price": 38.1,
+          "bid_qty": 40,
+          "ask_price": 41.0,
+          "ask_qty": 1100,
+          "prev_oi": 641140.0
+        },
+        "option_greeks": {
+          "vega": 12.0981,
+          "theta": -19.014,
+          "gamma": 0.0002,
+          "delta": -0.0834,
+          "iv": 12.57,
+          "pop": 7.95
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 53.5447,
+      "strike_price": 74100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873238",
+        "market_data": {
+          "ltp": 1287.0,
+          "volume": 6280,
+          "oi": 2460.0,
+          "close_price": 2237.9,
+          "bid_price": 1306.85,
+          "bid_qty": 20,
+          "ask_price": 1333.15,
+          "ask_qty": 20,
+          "prev_oi": 1040.0
+        },
+        "option_greeks": {
+          "vega": 11.9837,
+          "theta": -17.337,
+          "gamma": 0.0002,
+          "delta": 0.9177,
+          "iv": 11.57,
+          "pop": 48.26
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873355",
+        "market_data": {
+          "ltp": 47.7,
+          "volume": 7012920,
+          "oi": 131720.0,
+          "close_price": 39.0,
+          "bid_price": 42.95,
+          "bid_qty": 60,
+          "ask_price": 47.35,
+          "ask_qty": 20,
+          "prev_oi": 62460.0
+        },
+        "option_greeks": {
+          "vega": 13.2006,
+          "theta": -20.1425,
+          "gamma": 0.0002,
+          "delta": -0.0937,
+          "iv": 12.21,
+          "pop": 8.85
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 34.0947,
+      "strike_price": 74200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873146",
+        "market_data": {
+          "ltp": 1230.8,
+          "volume": 5120,
+          "oi": 3800.0,
+          "close_price": 2168.3,
+          "bid_price": 1215.3,
+          "bid_qty": 20,
+          "ask_price": 1246.1,
+          "ask_qty": 20,
+          "prev_oi": 2540.0
+        },
+        "option_greeks": {
+          "vega": 17.5976,
+          "theta": -30.2417,
+          "gamma": 0.0002,
+          "delta": 0.8595,
+          "iv": 13.75,
+          "pop": 46.84
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873223",
+        "market_data": {
+          "ltp": 54.0,
+          "volume": 7673900,
+          "oi": 129560.0,
+          "close_price": 43.85,
+          "bid_price": 50.2,
+          "bid_qty": 40,
+          "ask_price": 54.0,
+          "ask_qty": 420,
+          "prev_oi": 109320.0
+        },
+        "option_greeks": {
+          "vega": 14.7535,
+          "theta": -22.1743,
+          "gamma": 0.0002,
+          "delta": -0.1092,
+          "iv": 12.02,
+          "pop": 10.17
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 77.4762,
+      "strike_price": 74300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873275",
+        "market_data": {
+          "ltp": 1138.4,
+          "volume": 5820,
+          "oi": 2100.0,
+          "close_price": 2270.3,
+          "bid_price": 1123.0,
+          "bid_qty": 20,
+          "ask_price": 1157.0,
+          "ask_qty": 20,
+          "prev_oi": 1000.0
+        },
+        "option_greeks": {
+          "vega": 18.8085,
+          "theta": -31.3541,
+          "gamma": 0.0002,
+          "delta": 0.8449,
+          "iv": 13.34,
+          "pop": 46.47
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873130",
+        "market_data": {
+          "ltp": 58.1,
+          "volume": 8927920,
+          "oi": 162700.0,
+          "close_price": 49.3,
+          "bid_price": 58.5,
+          "bid_qty": 120,
+          "ask_price": 62.0,
+          "ask_qty": 740,
+          "prev_oi": 104120.0
+        },
+        "option_greeks": {
+          "vega": 16.6678,
+          "theta": -24.972,
+          "gamma": 0.0002,
+          "delta": -0.1298,
+          "iv": 11.99,
+          "pop": 11.88
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 58.9828,
+      "strike_price": 74400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873166",
+        "market_data": {
+          "ltp": 1047.5,
+          "volume": 10020,
+          "oi": 2320.0,
+          "close_price": 1981.95,
+          "bid_price": 1028.3,
+          "bid_qty": 20,
+          "ask_price": 1059.9,
+          "ask_qty": 40,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 20.1275,
+          "theta": -32.5739,
+          "gamma": 0.0002,
+          "delta": 0.8278,
+          "iv": 12.95,
+          "pop": 46.03
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873255",
+        "market_data": {
+          "ltp": 72.0,
+          "volume": 7888240,
+          "oi": 136840.0,
+          "close_price": 55.25,
+          "bid_price": 69.2,
+          "bid_qty": 60,
+          "ask_price": 72.0,
+          "ask_qty": 300,
+          "prev_oi": 83220.0
+        },
+        "option_greeks": {
+          "vega": 18.2184,
+          "theta": -26.6262,
+          "gamma": 0.0003,
+          "delta": -0.1479,
+          "iv": 11.69,
+          "pop": 13.33
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 42.4118,
+      "strike_price": 74500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873060",
+        "market_data": {
+          "ltp": 950.55,
+          "volume": 66340,
+          "oi": 11220.0,
+          "close_price": 1884.3,
+          "bid_price": 944.95,
+          "bid_qty": 80,
+          "ask_price": 971.35,
+          "ask_qty": 80,
+          "prev_oi": 460.0
+        },
+        "option_greeks": {
+          "vega": 21.054,
+          "theta": -32.1358,
+          "gamma": 0.0003,
+          "delta": 0.815,
+          "iv": 12.21,
+          "pop": 45.7
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873156",
+        "market_data": {
+          "ltp": 84.0,
+          "volume": 20029940,
+          "oi": 475860.0,
+          "close_price": 62.05,
+          "bid_price": 81.0,
+          "bid_qty": 100,
+          "ask_price": 84.0,
+          "ask_qty": 1680,
+          "prev_oi": 287500.0
+        },
+        "option_greeks": {
+          "vega": 19.7543,
+          "theta": -27.9855,
+          "gamma": 0.0003,
+          "delta": -0.1673,
+          "iv": 11.33,
+          "pop": 14.83
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 33.7395,
+      "strike_price": 74600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873183",
+        "market_data": {
+          "ltp": 862.0,
+          "volume": 23060,
+          "oi": 4300.0,
+          "close_price": 1797.15,
+          "bid_price": 858.0,
+          "bid_qty": 100,
+          "ask_price": 880.0,
+          "ask_qty": 100,
+          "prev_oi": 160.0
+        },
+        "option_greeks": {
+          "vega": 22.5343,
+          "theta": -33.2993,
+          "gamma": 0.0003,
+          "delta": 0.7931,
+          "iv": 11.82,
+          "pop": 45.09
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873285",
+        "market_data": {
+          "ltp": 97.0,
+          "volume": 9342200,
+          "oi": 145080.0,
+          "close_price": 69.8,
+          "bid_price": 96.1,
+          "bid_qty": 80,
+          "ask_price": 96.4,
+          "ask_qty": 100,
+          "prev_oi": 63280.0
+        },
+        "option_greeks": {
+          "vega": 21.7635,
+          "theta": -30.5828,
+          "gamma": 0.0003,
+          "delta": -0.1952,
+          "iv": 11.24,
+          "pop": 16.93
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 21.2857,
+      "strike_price": 74700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873097",
+        "market_data": {
+          "ltp": 789.0,
+          "volume": 68820,
+          "oi": 7700.0,
+          "close_price": 1703.1,
+          "bid_price": 776.8,
+          "bid_qty": 60,
+          "ask_price": 796.0,
+          "ask_qty": 100,
+          "prev_oi": 420.0
+        },
+        "option_greeks": {
+          "vega": 24.6549,
+          "theta": -36.9853,
+          "gamma": 0.0003,
+          "delta": 0.7576,
+          "iv": 12.0,
+          "pop": 44.03
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873176",
+        "market_data": {
+          "ltp": 109.8,
+          "volume": 8678920,
+          "oi": 163900.0,
+          "close_price": 77.6,
+          "bid_price": 110.4,
+          "bid_qty": 100,
+          "ask_price": 115.0,
+          "ask_qty": 20,
+          "prev_oi": 75980.0
+        },
+        "option_greeks": {
+          "vega": 23.6179,
+          "theta": -32.6256,
+          "gamma": 0.0003,
+          "delta": -0.2243,
+          "iv": 11.05,
+          "pop": 19.01
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 14.4641,
+      "strike_price": 74800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873214",
+        "market_data": {
+          "ltp": 711.0,
+          "volume": 151380,
+          "oi": 11420.0,
+          "close_price": 1616.65,
+          "bid_price": 694.8,
+          "bid_qty": 100,
+          "ask_price": 712.8,
+          "ask_qty": 100,
+          "prev_oi": 80.0
+        },
+        "option_greeks": {
+          "vega": 26.2797,
+          "theta": -38.8714,
+          "gamma": 0.0004,
+          "delta": 0.7259,
+          "iv": 11.83,
+          "pop": 43.03
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873324",
+        "market_data": {
+          "ltp": 132.0,
+          "volume": 9646220,
+          "oi": 165180.0,
+          "close_price": 87.3,
+          "bid_price": 128.1,
+          "bid_qty": 100,
+          "ask_price": 132.85,
+          "ask_qty": 20,
+          "prev_oi": 108680.0
+        },
+        "option_greeks": {
+          "vega": 25.2185,
+          "theta": -33.5861,
+          "gamma": 0.0004,
+          "delta": -0.2529,
+          "iv": 10.65,
+          "pop": 20.96
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 6.2502,
+      "strike_price": 74900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873122",
+        "market_data": {
+          "ltp": 617.6,
+          "volume": 272160,
+          "oi": 21980.0,
+          "close_price": 1526.6,
+          "bid_price": 616.25,
+          "bid_qty": 60,
+          "ask_price": 636.8,
+          "ask_qty": 100,
+          "prev_oi": 300.0
+        },
+        "option_greeks": {
+          "vega": 27.3614,
+          "theta": -37.6207,
+          "gamma": 0.0004,
+          "delta": 0.7016,
+          "iv": 11.0,
+          "pop": 42.24
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873203",
+        "market_data": {
+          "ltp": 153.0,
+          "volume": 8984580,
+          "oi": 137380.0,
+          "close_price": 97.6,
+          "bid_price": 148.85,
+          "bid_qty": 40,
+          "ask_price": 154.45,
+          "ask_qty": 300,
+          "prev_oi": 71700.0
+        },
+        "option_greeks": {
+          "vega": 27.0384,
+          "theta": -35.6617,
+          "gamma": 0.0004,
+          "delta": -0.2908,
+          "iv": 10.55,
+          "pop": 23.43
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 6.3145,
+      "strike_price": 75000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873389",
+        "market_data": {
+          "ltp": 542.15,
+          "volume": 1917940,
+          "oi": 90760.0,
+          "close_price": 1392.65,
+          "bid_price": 541.75,
+          "bid_qty": 20,
+          "ask_price": 559.95,
+          "ask_qty": 20,
+          "prev_oi": 10480.0
+        },
+        "option_greeks": {
+          "vega": 28.8361,
+          "theta": -39.1602,
+          "gamma": 0.0004,
+          "delta": 0.6621,
+          "iv": 10.86,
+          "pop": 40.86
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873495",
+        "market_data": {
+          "ltp": 178.95,
+          "volume": 30945740,
+          "oi": 573100.0,
+          "close_price": 109.5,
+          "bid_price": 176.9,
+          "bid_qty": 1000,
+          "ask_price": 179.0,
+          "ask_qty": 40,
+          "prev_oi": 498060.0
+        },
+        "option_greeks": {
+          "vega": 28.5023,
+          "theta": -36.3013,
+          "gamma": 0.0004,
+          "delta": -0.3281,
+          "iv": 10.19,
+          "pop": 25.72
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 4.4219,
+      "strike_price": 75100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873073",
+        "market_data": {
+          "ltp": 485.0,
+          "volume": 925120,
+          "oi": 39960.0,
+          "close_price": 1328.6,
+          "bid_price": 475.4,
+          "bid_qty": 60,
+          "ask_price": 487.5,
+          "ask_qty": 100,
+          "prev_oi": 220.0
+        },
+        "option_greeks": {
+          "vega": 30.0975,
+          "theta": -41.2033,
+          "gamma": 0.0004,
+          "delta": 0.6174,
+          "iv": 10.95,
+          "pop": 39.19
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873374",
+        "market_data": {
+          "ltp": 210.0,
+          "volume": 10520300,
+          "oi": 176700.0,
+          "close_price": 122.35,
+          "bid_price": 205.05,
+          "bid_qty": 40,
+          "ask_price": 209.55,
+          "ask_qty": 80,
+          "prev_oi": 82620.0
+        },
+        "option_greeks": {
+          "vega": 29.882,
+          "theta": -37.8591,
+          "gamma": 0.0005,
+          "delta": -0.3738,
+          "iv": 10.14,
+          "pop": 28.35
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 2.0682,
+      "strike_price": 75200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873421",
+        "market_data": {
+          "ltp": 420.0,
+          "volume": 2456360,
+          "oi": 113260.0,
+          "close_price": 1255.7,
+          "bid_price": 407.6,
+          "bid_qty": 20,
+          "ask_price": 420.0,
+          "ask_qty": 100,
+          "prev_oi": 1060.0
+        },
+        "option_greeks": {
+          "vega": 30.9321,
+          "theta": -41.5936,
+          "gamma": 0.0005,
+          "delta": 0.5736,
+          "iv": 10.76,
+          "pop": 37.44
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873050",
+        "market_data": {
+          "ltp": 243.65,
+          "volume": 13553800,
+          "oi": 234240.0,
+          "close_price": 135.8,
+          "bid_price": 239.35,
+          "bid_qty": 20,
+          "ask_price": 243.65,
+          "ask_qty": 60,
+          "prev_oi": 89940.0
+        },
+        "option_greeks": {
+          "vega": 30.843,
+          "theta": -38.2088,
+          "gamma": 0.0005,
+          "delta": -0.4205,
+          "iv": 9.91,
+          "pop": 30.86
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 1.6893,
+      "strike_price": 75300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873291",
+        "market_data": {
+          "ltp": 351.0,
+          "volume": 6951640,
+          "oi": 230540.0,
+          "close_price": 1162.8,
+          "bid_price": 349.9,
+          "bid_qty": 20,
+          "ask_price": 359.9,
+          "ask_qty": 20,
+          "prev_oi": 1180.0
+        },
+        "option_greeks": {
+          "vega": 31.3958,
+          "theta": -41.5436,
+          "gamma": 0.0005,
+          "delta": 0.5273,
+          "iv": 10.59,
+          "pop": 35.46
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873405",
+        "market_data": {
+          "ltp": 275.8,
+          "volume": 17340340,
+          "oi": 389460.0,
+          "close_price": 151.8,
+          "bid_price": 275.8,
+          "bid_qty": 20,
+          "ask_price": 283.0,
+          "ask_qty": 1320,
+          "prev_oi": 93340.0
+        },
+        "option_greeks": {
+          "vega": 31.3818,
+          "theta": -37.4847,
+          "gamma": 0.0005,
+          "delta": -0.4702,
+          "iv": 9.56,
+          "pop": 33.34
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.8634,
+      "strike_price": 75400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873449",
+        "market_data": {
+          "ltp": 295.2,
+          "volume": 9735460,
+          "oi": 281740.0,
+          "close_price": 1075.05,
+          "bid_price": 295.2,
+          "bid_qty": 340,
+          "ask_price": 303.0,
+          "ask_qty": 100,
+          "prev_oi": 4240.0
+        },
+        "option_greeks": {
+          "vega": 31.4237,
+          "theta": -39.7224,
+          "gamma": 0.0005,
+          "delta": 0.4784,
+          "iv": 10.11,
+          "pop": 33.22
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873086",
+        "market_data": {
+          "ltp": 328.0,
+          "volume": 18182460,
+          "oi": 243260.0,
+          "close_price": 168.95,
+          "bid_price": 320.1,
+          "bid_qty": 20,
+          "ask_price": 328.0,
+          "ask_qty": 40,
+          "prev_oi": 90860.0
+        },
+        "option_greeks": {
+          "vega": 31.4116,
+          "theta": -35.9626,
+          "gamma": 0.0006,
+          "delta": -0.5242,
+          "iv": 9.16,
+          "pop": 35.83
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.7212,
+      "strike_price": 75500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873329",
+        "market_data": {
+          "ltp": 254.55,
+          "volume": 22054820,
+          "oi": 581800.0,
+          "close_price": 983.1,
+          "bid_price": 245.75,
+          "bid_qty": 20,
+          "ask_price": 254.55,
+          "ask_qty": 20,
+          "prev_oi": 19460.0
+        },
+        "option_greeks": {
+          "vega": 30.957,
+          "theta": -38.7339,
+          "gamma": 0.0005,
+          "delta": 0.4281,
+          "iv": 10.01,
+          "pop": 30.73
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873436",
+        "market_data": {
+          "ltp": 376.9,
+          "volume": 28539120,
+          "oi": 419580.0,
+          "close_price": 191.55,
+          "bid_price": 368.6,
+          "bid_qty": 100,
+          "ask_price": 379.0,
+          "ask_qty": 380,
+          "prev_oi": 276860.0
+        },
+        "option_greeks": {
+          "vega": 30.8916,
+          "theta": -36.494,
+          "gamma": 0.0005,
+          "delta": -0.5764,
+          "iv": 9.45,
+          "pop": 38.07
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.4174,
+      "strike_price": 75600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873485",
+        "market_data": {
+          "ltp": 200.2,
+          "volume": 16057980,
+          "oi": 348700.0,
+          "close_price": 912.3,
+          "bid_price": 200.85,
+          "bid_qty": 200,
+          "ask_price": 206.8,
+          "ask_qty": 100,
+          "prev_oi": 9120.0
+        },
+        "option_greeks": {
+          "vega": 30.0548,
+          "theta": -38.1138,
+          "gamma": 0.0005,
+          "delta": 0.3808,
+          "iv": 10.15,
+          "pop": 28.21
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873311",
+        "market_data": {
+          "ltp": 434.95,
+          "volume": 17592340,
+          "oi": 145560.0,
+          "close_price": 210.55,
+          "bid_price": 424.7,
+          "bid_qty": 80,
+          "ask_price": 434.95,
+          "ask_qty": 60,
+          "prev_oi": 107860.0
+        },
+        "option_greeks": {
+          "vega": 29.6269,
+          "theta": -32.9375,
+          "gamma": 0.0005,
+          "delta": -0.6359,
+          "iv": 8.89,
+          "pop": 40.38
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.3606,
+      "strike_price": 75700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873361",
+        "market_data": {
+          "ltp": 167.0,
+          "volume": 13977460,
+          "oi": 315780.0,
+          "close_price": 826.65,
+          "bid_price": 165.0,
+          "bid_qty": 80,
+          "ask_price": 173.7,
+          "ask_qty": 100,
+          "prev_oi": 8720.0
+        },
+        "option_greeks": {
+          "vega": 28.6108,
+          "theta": -35.58,
+          "gamma": 0.0005,
+          "delta": 0.3313,
+          "iv": 9.95,
+          "pop": 25.38
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873466",
+        "market_data": {
+          "ltp": 500.0,
+          "volume": 11623240,
+          "oi": 113860.0,
+          "close_price": 233.7,
+          "bid_price": 487.5,
+          "bid_qty": 100,
+          "ask_price": 500.0,
+          "ask_qty": 200,
+          "prev_oi": 86080.0
+        },
+        "option_greeks": {
+          "vega": 27.8607,
+          "theta": -30.7148,
+          "gamma": 0.0005,
+          "delta": -0.6892,
+          "iv": 8.82,
+          "pop": 42.29
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.2584,
+      "strike_price": 75800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873517",
+        "market_data": {
+          "ltp": 137.5,
+          "volume": 15306160,
+          "oi": 316480.0,
+          "close_price": 760.45,
+          "bid_price": 135.0,
+          "bid_qty": 140,
+          "ask_price": 137.5,
+          "ask_qty": 420,
+          "prev_oi": 20660.0
+        },
+        "option_greeks": {
+          "vega": 26.8908,
+          "theta": -33.582,
+          "gamma": 0.0004,
+          "delta": 0.2875,
+          "iv": 9.99,
+          "pop": 22.7
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873345",
+        "market_data": {
+          "ltp": 562.6,
+          "volume": 10421300,
+          "oi": 81780.0,
+          "close_price": 263.65,
+          "bid_price": 556.8,
+          "bid_qty": 100,
+          "ask_price": 569.9,
+          "ask_qty": 80,
+          "prev_oi": 154200.0
+        },
+        "option_greeks": {
+          "vega": 25.4047,
+          "theta": -27.2562,
+          "gamma": 0.0005,
+          "delta": -0.7436,
+          "iv": 8.58,
+          "pop": 44.07
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.2407,
+      "strike_price": 75900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873396",
+        "market_data": {
+          "ltp": 118.0,
+          "volume": 14540960,
+          "oi": 293420.0,
+          "close_price": 691.35,
+          "bid_price": 112.0,
+          "bid_qty": 1000,
+          "ask_price": 114.6,
+          "ask_qty": 100,
+          "prev_oi": 19300.0
+        },
+        "option_greeks": {
+          "vega": 24.8435,
+          "theta": -30.9898,
+          "gamma": 0.0004,
+          "delta": 0.2458,
+          "iv": 9.98,
+          "pop": 19.99
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873502",
+        "market_data": {
+          "ltp": 641.0,
+          "volume": 5707600,
+          "oi": 70620.0,
+          "close_price": 292.2,
+          "bid_price": 627.4,
+          "bid_qty": 60,
+          "ask_price": 647.55,
+          "ask_qty": 60,
+          "prev_oi": 118240.0
+        },
+        "option_greeks": {
+          "vega": 23.7072,
+          "theta": -27.0515,
+          "gamma": 0.0004,
+          "delta": -0.7742,
+          "iv": 9.13,
+          "pop": 45.01
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.3165,
+      "strike_price": 76000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873180",
+        "market_data": {
+          "ltp": 95.0,
+          "volume": 29958900,
+          "oi": 983000.0,
+          "close_price": 623.75,
+          "bid_price": 92.15,
+          "bid_qty": 120,
+          "ask_price": 95.7,
+          "ask_qty": 200,
+          "prev_oi": 166760.0
+        },
+        "option_greeks": {
+          "vega": 22.6757,
+          "theta": -28.4263,
+          "gamma": 0.0004,
+          "delta": 0.2091,
+          "iv": 10.03,
+          "pop": 17.45
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873281",
+        "market_data": {
+          "ltp": 710.0,
+          "volume": 9611680,
+          "oi": 311080.0,
+          "close_price": 326.15,
+          "bid_price": 709.2,
+          "bid_qty": 100,
+          "ask_price": 724.9,
+          "ask_qty": 20,
+          "prev_oi": 578080.0
+        },
+        "option_greeks": {
+          "vega": 20.1507,
+          "theta": -21.6961,
+          "gamma": 0.0004,
+          "delta": -0.8275,
+          "iv": 8.61,
+          "pop": 46.51
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.1501,
+      "strike_price": 76100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873092",
+        "market_data": {
+          "ltp": 74.5,
+          "volume": 10263880,
+          "oi": 262340.0,
+          "close_price": 561.9,
+          "bid_price": 74.4,
+          "bid_qty": 100,
+          "ask_price": 77.2,
+          "ask_qty": 100,
+          "prev_oi": 61860.0
+        },
+        "option_greeks": {
+          "vega": 20.5249,
+          "theta": -26.0139,
+          "gamma": 0.0003,
+          "delta": 0.1776,
+          "iv": 10.14,
+          "pop": 15.16
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873172",
+        "market_data": {
+          "ltp": 806.45,
+          "volume": 2131120,
+          "oi": 39380.0,
+          "close_price": 361.7,
+          "bid_price": 788.05,
+          "bid_qty": 20,
+          "ask_price": 811.35,
+          "ask_qty": 80,
+          "prev_oi": 141820.0
+        },
+        "option_greeks": {
+          "vega": 18.8297,
+          "theta": -21.7912,
+          "gamma": 0.0003,
+          "delta": -0.8446,
+          "iv": 9.26,
+          "pop": 46.97
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.2796,
+      "strike_price": 76200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873208",
+        "market_data": {
+          "ltp": 61.2,
+          "volume": 12470240,
+          "oi": 324520.0,
+          "close_price": 499.85,
+          "bid_price": 61.2,
+          "bid_qty": 20,
+          "ask_price": 63.2,
+          "ask_qty": 100,
+          "prev_oi": 79540.0
+        },
+        "option_greeks": {
+          "vega": 18.6126,
+          "theta": -24.1226,
+          "gamma": 0.0003,
+          "delta": 0.1527,
+          "iv": 10.37,
+          "pop": 13.27
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873318",
+        "market_data": {
+          "ltp": 876.0,
+          "volume": 1973820,
+          "oi": 90740.0,
+          "close_price": 402.35,
+          "bid_price": 873.0,
+          "bid_qty": 100,
+          "ask_price": 897.85,
+          "ask_qty": 20,
+          "prev_oi": 169320.0
+        },
+        "option_greeks": {
+          "vega": 13.3777,
+          "theta": -13.6127,
+          "gamma": 0.0003,
+          "delta": -0.9046,
+          "iv": 8.14,
+          "pop": 48.39
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.1624,
+      "strike_price": 76300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873117",
+        "market_data": {
+          "ltp": 50.0,
+          "volume": 12193880,
+          "oi": 363900.0,
+          "close_price": 443.35,
+          "bid_price": 50.0,
+          "bid_qty": 320,
+          "ask_price": 51.9,
+          "ask_qty": 100,
+          "prev_oi": 258000.0
+        },
+        "option_greeks": {
+          "vega": 16.5147,
+          "theta": -21.5927,
+          "gamma": 0.0003,
+          "delta": 0.1281,
+          "iv": 10.46,
+          "pop": 11.33
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873196",
+        "market_data": {
+          "ltp": 970.25,
+          "volume": 1250200,
+          "oi": 59100.0,
+          "close_price": 444.65,
+          "bid_price": 965.3,
+          "bid_qty": 100,
+          "ask_price": 988.55,
+          "ask_qty": 20,
+          "prev_oi": 271640.0
+        },
+        "option_greeks": {
+          "vega": 11.4126,
+          "theta": -11.9179,
+          "gamma": 0.0002,
+          "delta": -0.9228,
+          "iv": 8.35,
+          "pop": 48.79
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.2884,
+      "strike_price": 76400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873239",
+        "market_data": {
+          "ltp": 45.5,
+          "volume": 9519720,
+          "oi": 349200.0,
+          "close_price": 394.0,
+          "bid_price": 41.05,
+          "bid_qty": 380,
+          "ask_price": 44.4,
+          "ask_qty": 200,
+          "prev_oi": 215660.0
+        },
+        "option_greeks": {
+          "vega": 14.9804,
+          "theta": -20.1724,
+          "gamma": 0.0002,
+          "delta": 0.1115,
+          "iv": 10.77,
+          "pop": 9.98
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873103",
+        "market_data": {
+          "ltp": 1066.35,
+          "volume": 668520,
+          "oi": 100700.0,
+          "close_price": 493.05,
+          "bid_price": 1053.1,
+          "bid_qty": 80,
+          "ask_price": 1084.35,
+          "ask_qty": 20,
+          "prev_oi": 239020.0
+        },
+        "option_greeks": {
+          "vega": 9.8779,
+          "theta": -10.6638,
+          "gamma": 0.0002,
+          "delta": -0.936,
+          "iv": 8.64,
+          "pop": 49.07
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.1095,
+      "strike_price": 76500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873147",
+        "market_data": {
+          "ltp": 37.55,
+          "volume": 21803180,
+          "oi": 663160.0,
+          "close_price": 346.45,
+          "bid_price": 34.8,
+          "bid_qty": 60,
+          "ask_price": 37.5,
+          "ask_qty": 80,
+          "prev_oi": 268640.0
+        },
+        "option_greeks": {
+          "vega": 12.7208,
+          "theta": -16.984,
+          "gamma": 0.0002,
+          "delta": 0.0892,
+          "iv": 10.68,
+          "pop": 8.11
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873225",
+        "market_data": {
+          "ltp": 1160.0,
+          "volume": 763200,
+          "oi": 72620.0,
+          "close_price": 546.65,
+          "bid_price": 1142.7,
+          "bid_qty": 100,
+          "ask_price": 1172.8,
+          "ask_qty": 20,
+          "prev_oi": 161020.0
+        },
+        "option_greeks": {
+          "vega": 7.5715,
+          "theta": -8.0727,
+          "gamma": 0.0001,
+          "delta": -0.9543,
+          "iv": 8.53,
+          "pop": 49.43
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.1641,
+      "strike_price": 76600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873505",
+        "market_data": {
+          "ltp": 29.0,
+          "volume": 8193360,
+          "oi": 279140.0,
+          "close_price": 303.3,
+          "bid_price": 29.0,
+          "bid_qty": 400,
+          "ask_price": 29.65,
+          "ask_qty": 40,
+          "prev_oi": 139540.0
+        },
+        "option_greeks": {
+          "vega": 11.2411,
+          "theta": -15.2979,
+          "gamma": 0.0002,
+          "delta": 0.0757,
+          "iv": 10.89,
+          "pop": 6.95
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873131",
+        "market_data": {
+          "ltp": 1242.5,
+          "volume": 119460,
+          "oi": 45800.0,
+          "close_price": 601.45,
+          "bid_price": 1235.3,
+          "bid_qty": 20,
+          "ask_price": 1269.85,
+          "ask_qty": 20,
+          "prev_oi": 62660.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.118,
+      "strike_price": 76700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873167",
+        "market_data": {
+          "ltp": 23.6,
+          "volume": 8225780,
+          "oi": 282500.0,
+          "close_price": 263.8,
+          "bid_price": 22.05,
+          "bid_qty": 20,
+          "ask_price": 25.0,
+          "ask_qty": 40,
+          "prev_oi": 115580.0
+        },
+        "option_greeks": {
+          "vega": 10.1286,
+          "theta": -14.18,
+          "gamma": 0.0001,
+          "delta": 0.0661,
+          "iv": 11.2,
+          "pop": 6.11
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873256",
+        "market_data": {
+          "ltp": 1351.3,
+          "volume": 68920,
+          "oi": 33340.0,
+          "close_price": 658.8,
+          "bid_price": 1332.8,
+          "bid_qty": 100,
+          "ask_price": 1369.7,
+          "ask_qty": 20,
+          "prev_oi": 41720.0
+        },
+        "option_greeks": {
+          "vega": 3.3741,
+          "theta": -3.3722,
+          "gamma": 0.0001,
+          "delta": -0.9827,
+          "iv": 8.0,
+          "pop": 49.92
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0695,
+      "strike_price": 76800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873061",
+        "market_data": {
+          "ltp": 19.8,
+          "volume": 9396460,
+          "oi": 345320.0,
+          "close_price": 228.9,
+          "bid_price": 18.25,
+          "bid_qty": 100,
+          "ask_price": 20.45,
+          "ask_qty": 200,
+          "prev_oi": 103440.0
+        },
+        "option_greeks": {
+          "vega": 8.393,
+          "theta": -11.686,
+          "gamma": 0.0001,
+          "delta": 0.052,
+          "iv": 11.14,
+          "pop": 4.86
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873157",
+        "market_data": {
+          "ltp": 1426.9,
+          "volume": 37220,
+          "oi": 24000.0,
+          "close_price": 723.25,
+          "bid_price": 1423.6,
+          "bid_qty": 80,
+          "ask_price": 1455.0,
+          "ask_qty": 60,
+          "prev_oi": 35200.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0762,
+      "strike_price": 76900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873184",
+        "market_data": {
+          "ltp": 17.0,
+          "volume": 6968560,
+          "oi": 234920.0,
+          "close_price": 198.0,
+          "bid_price": 17.0,
+          "bid_qty": 780,
+          "ask_price": 17.95,
+          "ask_qty": 20,
+          "prev_oi": 108660.0
+        },
+        "option_greeks": {
+          "vega": 7.3913,
+          "theta": -10.5029,
+          "gamma": 0.0001,
+          "delta": 0.0444,
+          "iv": 11.37,
+          "pop": 4.17
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873286",
+        "market_data": {
+          "ltp": 1557.2,
+          "volume": 19400,
+          "oi": 17900.0,
+          "close_price": 785.8,
+          "bid_price": 1521.45,
+          "bid_qty": 80,
+          "ask_price": 1557.05,
+          "ask_qty": 20,
+          "prev_oi": 25980.0
+        },
+        "option_greeks": {
+          "vega": 5.5184,
+          "theta": -7.1573,
+          "gamma": 0.0001,
+          "delta": -0.969,
+          "iv": 10.38,
+          "pop": 49.74
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0365,
+      "strike_price": 77000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873476",
+        "market_data": {
+          "ltp": 14.95,
+          "volume": 21986480,
+          "oi": 1291860.0,
+          "close_price": 168.95,
+          "bid_price": 14.0,
+          "bid_qty": 20,
+          "ask_price": 14.95,
+          "ask_qty": 1240,
+          "prev_oi": 397420.0
+        },
+        "option_greeks": {
+          "vega": 6.535,
+          "theta": -9.4855,
+          "gamma": 0.0001,
+          "delta": 0.0381,
+          "iv": 11.61,
+          "pop": 3.59
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873109",
+        "market_data": {
+          "ltp": 1633.0,
+          "volume": 154620,
+          "oi": 47180.0,
+          "close_price": 864.2,
+          "bid_price": 1637.4,
+          "bid_qty": 20,
+          "ask_price": 1651.05,
+          "ask_qty": 20,
+          "prev_oi": 69780.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0356,
+      "strike_price": 77100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873357",
+        "market_data": {
+          "ltp": 11.15,
+          "volume": 6962620,
+          "oi": 234920.0,
+          "close_price": 145.3,
+          "bid_price": 11.15,
+          "bid_qty": 360,
+          "ask_price": 12.5,
+          "ask_qty": 160,
+          "prev_oi": 75400.0
+        },
+        "option_greeks": {
+          "vega": 5.934,
+          "theta": -8.8621,
+          "gamma": 0.0001,
+          "delta": 0.0339,
+          "iv": 11.95,
+          "pop": 3.2
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873460",
+        "market_data": {
+          "ltp": 1718.95,
+          "volume": 20820,
+          "oi": 8360.0,
+          "close_price": 940.3,
+          "bid_price": 1716.35,
+          "bid_qty": 20,
+          "ask_price": 1751.15,
+          "ask_qty": 20,
+          "prev_oi": 10100.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0173,
+      "strike_price": 77200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873512",
+        "market_data": {
+          "ltp": 10.85,
+          "volume": 7730480,
+          "oi": 320820.0,
+          "close_price": 122.75,
+          "bid_price": 10.3,
+          "bid_qty": 60,
+          "ask_price": 11.0,
+          "ask_qty": 940,
+          "prev_oi": 328620.0
+        },
+        "option_greeks": {
+          "vega": 5.2376,
+          "theta": -7.9719,
+          "gamma": 0.0001,
+          "delta": 0.0291,
+          "iv": 12.18,
+          "pop": 2.76
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873341",
+        "market_data": {
+          "ltp": 1885.35,
+          "volume": 9600,
+          "oi": 5560.0,
+          "close_price": 1017.35,
+          "bid_price": 1821.0,
+          "bid_qty": 20,
+          "ask_price": 1848.05,
+          "ask_qty": 20,
+          "prev_oi": 7760.0
+        },
+        "option_greeks": {
+          "vega": 10.6073,
+          "theta": -20.6869,
+          "gamma": 0.0001,
+          "delta": -0.9299,
+          "iv": 15.6,
+          "pop": 49.1
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0298,
+      "strike_price": 77300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873390",
+        "market_data": {
+          "ltp": 9.9,
+          "volume": 7039000,
+          "oi": 279160.0,
+          "close_price": 104.35,
+          "bid_price": 8.8,
+          "bid_qty": 20,
+          "ask_price": 9.9,
+          "ask_qty": 20,
+          "prev_oi": 126720.0
+        },
+        "option_greeks": {
+          "vega": 4.8464,
+          "theta": -7.6076,
+          "gamma": 0.0001,
+          "delta": 0.0265,
+          "iv": 12.56,
+          "pop": 2.52
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873496",
+        "market_data": {
+          "ltp": 1981.1,
+          "volume": 4740,
+          "oi": 8320.0,
+          "close_price": 1081.9,
+          "bid_price": 1920.3,
+          "bid_qty": 20,
+          "ask_price": 1947.55,
+          "ask_qty": 20,
+          "prev_oi": 8800.0
+        },
+        "option_greeks": {
+          "vega": 9.7207,
+          "theta": -19.2174,
+          "gamma": 0.0001,
+          "delta": -0.9373,
+          "iv": 15.82,
+          "pop": 49.25
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.03,
+      "strike_price": 77400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873261",
+        "market_data": {
+          "ltp": 8.35,
+          "volume": 5430440,
+          "oi": 266960.0,
+          "close_price": 88.85,
+          "bid_price": 7.05,
+          "bid_qty": 120,
+          "ask_price": 8.3,
+          "ask_qty": 20,
+          "prev_oi": 101800.0
+        },
+        "option_greeks": {
+          "vega": 4.2109,
+          "theta": -6.6983,
+          "gamma": 0.0001,
+          "delta": 0.0224,
+          "iv": 12.73,
+          "pop": 2.13
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873375",
+        "market_data": {
+          "ltp": 2108.75,
+          "volume": 3920,
+          "oi": 8020.0,
+          "close_price": 1165.95,
+          "bid_price": 2008.75,
+          "bid_qty": 60,
+          "ask_price": 2050.8,
+          "ask_qty": 60,
+          "prev_oi": 8800.0
+        },
+        "option_greeks": {
+          "vega": 12.7524,
+          "theta": -30.1486,
+          "gamma": 0.0001,
+          "delta": -0.9105,
+          "iv": 18.91,
+          "pop": 48.75
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0165,
+      "strike_price": 77500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873423",
+        "market_data": {
+          "ltp": 6.25,
+          "volume": 13279580,
+          "oi": 867400.0,
+          "close_price": 74.2,
+          "bid_price": 6.25,
+          "bid_qty": 120,
+          "ask_price": 7.45,
+          "ask_qty": 100,
+          "prev_oi": 387740.0
+        },
+        "option_greeks": {
+          "vega": 3.8821,
+          "theta": -6.3457,
+          "gamma": 0.0,
+          "delta": 0.0204,
+          "iv": 13.08,
+          "pop": 1.94
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873051",
+        "market_data": {
+          "ltp": 2102.8,
+          "volume": 30020,
+          "oi": 14340.0,
+          "close_price": 1261.85,
+          "bid_price": 2115.1,
+          "bid_qty": 40,
+          "ask_price": 2149.8,
+          "ask_qty": 60,
+          "prev_oi": 19340.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.015,
+      "strike_price": 77600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873292",
+        "market_data": {
+          "ltp": 6.8,
+          "volume": 4828380,
+          "oi": 206120.0,
+          "close_price": 62.85,
+          "bid_price": 6.0,
+          "bid_qty": 20,
+          "ask_price": 6.8,
+          "ask_qty": 1080,
+          "prev_oi": 115400.0
+        },
+        "option_greeks": {
+          "vega": 3.4834,
+          "theta": -5.8069,
+          "gamma": 0.0,
+          "delta": 0.0179,
+          "iv": 13.34,
+          "pop": 1.71
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873406",
+        "market_data": {
+          "ltp": 2190.0,
+          "volume": 3580,
+          "oi": 3100.0,
+          "close_price": 1351.55,
+          "bid_price": 2198.6,
+          "bid_qty": 80,
+          "ask_price": 2256.45,
+          "ask_qty": 80,
+          "prev_oi": 3820.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0054,
+      "strike_price": 77700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873450",
+        "market_data": {
+          "ltp": 5.4,
+          "volume": 5257980,
+          "oi": 243800.0,
+          "close_price": 53.0,
+          "bid_price": 5.4,
+          "bid_qty": 600,
+          "ask_price": 5.95,
+          "ask_qty": 60,
+          "prev_oi": 152740.0
+        },
+        "option_greeks": {
+          "vega": 2.9217,
+          "theta": -4.8928,
+          "gamma": 0.0,
+          "delta": 0.0146,
+          "iv": 13.4,
+          "pop": 1.39
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873087",
+        "market_data": {
+          "ltp": 2453.45,
+          "volume": 1160,
+          "oi": 1320.0,
+          "close_price": 1423.5,
+          "bid_price": 2301.05,
+          "bid_qty": 60,
+          "ask_price": 2348.0,
+          "ask_qty": 60,
+          "prev_oi": 1640.0
+        },
+        "option_greeks": {
+          "vega": 15.333,
+          "theta": -46.3464,
+          "gamma": 0.0001,
+          "delta": -0.8848,
+          "iv": 24.18,
+          "pop": 48.29
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0057,
+      "strike_price": 77800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873331",
+        "market_data": {
+          "ltp": 4.6,
+          "volume": 4956600,
+          "oi": 212340.0,
+          "close_price": 44.3,
+          "bid_price": 4.4,
+          "bid_qty": 160,
+          "ask_price": 5.3,
+          "ask_qty": 20,
+          "prev_oi": 161940.0
+        },
+        "option_greeks": {
+          "vega": 2.5248,
+          "theta": -4.2763,
+          "gamma": 0.0,
+          "delta": 0.0123,
+          "iv": 13.55,
+          "pop": 1.18
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873437",
+        "market_data": {
+          "ltp": 2312.15,
+          "volume": 560,
+          "oi": 1200.0,
+          "close_price": 1518.7,
+          "bid_price": 2397.35,
+          "bid_qty": 40,
+          "ask_price": 2455.4,
+          "ask_qty": 80,
+          "prev_oi": 1320.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0105,
+      "strike_price": 77900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873487",
+        "market_data": {
+          "ltp": 4.95,
+          "volume": 3128620,
+          "oi": 161260.0,
+          "close_price": 37.45,
+          "bid_price": 4.4,
+          "bid_qty": 380,
+          "ask_price": 5.0,
+          "ask_qty": 280,
+          "prev_oi": 82880.0
+        },
+        "option_greeks": {
+          "vega": 2.5587,
+          "theta": -4.5191,
+          "gamma": 0.0,
+          "delta": 0.0125,
+          "iv": 14.13,
+          "pop": 1.19
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873312",
+        "market_data": {
+          "ltp": 2417.95,
+          "volume": 160,
+          "oi": 1700.0,
+          "close_price": 1613.55,
+          "bid_price": 2502.65,
+          "bid_qty": 80,
+          "ask_price": 2543.85,
+          "ask_qty": 80,
+          "prev_oi": 1600.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0076,
+      "strike_price": 78000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873268",
+        "market_data": {
+          "ltp": 4.05,
+          "volume": 12278380,
+          "oi": 1303220.0,
+          "close_price": 31.3,
+          "bid_price": 3.75,
+          "bid_qty": 200,
+          "ask_price": 4.05,
+          "ask_qty": 320,
+          "prev_oi": 625740.0
+        },
+        "option_greeks": {
+          "vega": 2.224,
+          "theta": -3.9705,
+          "gamma": 0.0,
+          "delta": 0.0107,
+          "iv": 14.28,
+          "pop": 1.02
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873128",
+        "market_data": {
+          "ltp": 2675.75,
+          "volume": 14100,
+          "oi": 9880.0,
+          "close_price": 1732.25,
+          "bid_price": 2611.4,
+          "bid_qty": 40,
+          "ask_price": 2644.8,
+          "ask_qty": 20,
+          "prev_oi": 15580.0
+        },
+        "option_greeks": {
+          "vega": 7.5289,
+          "theta": -18.2447,
+          "gamma": 0.0001,
+          "delta": -0.9546,
+          "iv": 19.39,
+          "pop": 49.67
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0117,
+      "strike_price": 78100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873163",
+        "market_data": {
+          "ltp": 3.55,
+          "volume": 2237020,
+          "oi": 108060.0,
+          "close_price": 26.4,
+          "bid_price": 4.0,
+          "bid_qty": 200,
+          "ask_price": 4.3,
+          "ask_qty": 200,
+          "prev_oi": 80000.0
+        },
+        "option_greeks": {
+          "vega": 2.3401,
+          "theta": -4.3741,
+          "gamma": 0.0,
+          "delta": 0.0113,
+          "iv": 14.95,
+          "pop": 1.07
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873252",
+        "market_data": {
+          "ltp": 2523.55,
+          "volume": 40,
+          "oi": 1260.0,
+          "close_price": 1820.5,
+          "bid_price": 2041.25,
+          "bid_qty": 100,
+          "ask_price": 2747.8,
+          "ask_qty": 80,
+          "prev_oi": 1260.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0059,
+      "strike_price": 78200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873058",
+        "market_data": {
+          "ltp": 3.95,
+          "volume": 2655940,
+          "oi": 245580.0,
+          "close_price": 21.9,
+          "bid_price": 3.45,
+          "bid_qty": 40,
+          "ask_price": 3.95,
+          "ask_qty": 20,
+          "prev_oi": 149620.0
+        },
+        "option_greeks": {
+          "vega": 2.0709,
+          "theta": -3.9183,
+          "gamma": 0.0,
+          "delta": 0.0098,
+          "iv": 15.14,
+          "pop": 0.93
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873154",
+        "market_data": {
+          "ltp": 2892.15,
+          "volume": 60,
+          "oi": 1460.0,
+          "close_price": 1893.65,
+          "bid_price": 2795.55,
+          "bid_qty": 60,
+          "ask_price": 2846.95,
+          "ask_qty": 60,
+          "prev_oi": 1500.0
+        },
+        "option_greeks": {
+          "vega": 9.3003,
+          "theta": -26.1825,
+          "gamma": 0.0001,
+          "delta": -0.9408,
+          "iv": 22.52,
+          "pop": 49.47
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0158,
+      "strike_price": 78300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873181",
+        "market_data": {
+          "ltp": 3.0,
+          "volume": 1758940,
+          "oi": 127680.0,
+          "close_price": 18.25,
+          "bid_price": 3.2,
+          "bid_qty": 40,
+          "ask_price": 3.75,
+          "ask_qty": 80,
+          "prev_oi": 177520.0
+        },
+        "option_greeks": {
+          "vega": 2.3432,
+          "theta": -4.6927,
+          "gamma": 0.0,
+          "delta": 0.0113,
+          "iv": 16.02,
+          "pop": 1.07
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873282",
+        "market_data": {
+          "ltp": 2995.75,
+          "volume": 280,
+          "oi": 2020.0,
+          "close_price": 1936.35,
+          "bid_price": 1300.0,
+          "bid_qty": 200,
+          "ask_price": 4400.0,
+          "ask_qty": 200,
+          "prev_oi": 2040.0
+        },
+        "option_greeks": {
+          "vega": 9.519,
+          "theta": -27.9784,
+          "gamma": 0.0001,
+          "delta": -0.939,
+          "iv": 23.51,
+          "pop": 49.45
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0092,
+      "strike_price": 78400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873093",
+        "market_data": {
+          "ltp": 3.55,
+          "volume": 1370460,
+          "oi": 102140.0,
+          "close_price": 15.7,
+          "bid_price": 3.0,
+          "bid_qty": 340,
+          "ask_price": 3.55,
+          "ask_qty": 80,
+          "prev_oi": 104000.0
+        },
+        "option_greeks": {
+          "vega": 1.8206,
+          "theta": -3.5975,
+          "gamma": 0.0,
+          "delta": 0.0085,
+          "iv": 15.81,
+          "pop": 0.8
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873173",
+        "market_data": {
+          "ltp": 2498.3,
+          "volume": 440,
+          "oi": 940.0,
+          "close_price": 2054.85,
+          "bid_price": 1300.3,
+          "bid_qty": 100,
+          "ask_price": 4400.0,
+          "ask_qty": 200,
+          "prev_oi": 740.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0038,
+      "strike_price": 78500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873209",
+        "market_data": {
+          "ltp": 2.55,
+          "volume": 6406720,
+          "oi": 629940.0,
+          "close_price": 13.3,
+          "bid_price": 2.55,
+          "bid_qty": 1580,
+          "ask_price": 2.6,
+          "ask_qty": 920,
+          "prev_oi": 443060.0
+        },
+        "option_greeks": {
+          "vega": 1.4053,
+          "theta": -2.7447,
+          "gamma": 0.0,
+          "delta": 0.0063,
+          "iv": 15.63,
+          "pop": 0.6
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873320",
+        "market_data": {
+          "ltp": 3027.1,
+          "volume": 60,
+          "oi": 2420.0,
+          "close_price": 2130.05,
+          "bid_price": 3097.65,
+          "bid_qty": 60,
+          "ask_price": 3144.2,
+          "ask_qty": 20,
+          "prev_oi": 2440.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0115,
+      "strike_price": 78600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873118",
+        "market_data": {
+          "ltp": 3.25,
+          "volume": 1655400,
+          "oi": 115100.0,
+          "close_price": 11.4,
+          "bid_price": 2.15,
+          "bid_qty": 180,
+          "ask_price": 3.25,
+          "ask_qty": 200,
+          "prev_oi": 135900.0
+        },
+        "option_greeks": {
+          "vega": 1.6508,
+          "theta": -3.413,
+          "gamma": 0.0,
+          "delta": 0.0076,
+          "iv": 16.54,
+          "pop": 0.72
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873197",
+        "market_data": {
+          "ltp": 1978.5,
+          "volume": 0,
+          "oi": 1320.0,
+          "close_price": 2247.8,
+          "bid_price": 1600.0,
+          "bid_qty": 200,
+          "ask_price": 4700.0,
+          "ask_qty": 200,
+          "prev_oi": 1320.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0013,
+      "strike_price": 78700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873241",
+        "market_data": {
+          "ltp": 2.0,
+          "volume": 1753300,
+          "oi": 118720.0,
+          "close_price": 9.8,
+          "bid_price": 2.0,
+          "bid_qty": 220,
+          "ask_price": 2.9,
+          "ask_qty": 560,
+          "prev_oi": 181100.0
+        },
+        "option_greeks": {
+          "vega": 1.1629,
+          "theta": -2.3424,
+          "gamma": 0.0,
+          "delta": 0.0051,
+          "iv": 16.11,
+          "pop": 0.48
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873104",
+        "market_data": {
+          "ltp": 2151.35,
+          "volume": 0,
+          "oi": 160.0,
+          "close_price": 2345.15,
+          "bid_price": 1500.0,
+          "bid_qty": 200,
+          "ask_price": 4900.0,
+          "ask_qty": 200,
+          "prev_oi": 160.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0054,
+      "strike_price": 78800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873148",
+        "market_data": {
+          "ltp": 2.6,
+          "volume": 1366460,
+          "oi": 103800.0,
+          "close_price": 8.5,
+          "bid_price": 1.95,
+          "bid_qty": 200,
+          "ask_price": 2.6,
+          "ask_qty": 800,
+          "prev_oi": 168000.0
+        },
+        "option_greeks": {
+          "vega": 1.3499,
+          "theta": -2.8631,
+          "gamma": 0.0,
+          "delta": 0.006,
+          "iv": 16.97,
+          "pop": 0.57
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873226",
+        "market_data": {
+          "ltp": 2288.95,
+          "volume": 0,
+          "oi": 560.0,
+          "close_price": 2442.9,
+          "bid_price": 1600.0,
+          "bid_qty": 200,
+          "ask_price": 5100.0,
+          "ask_qty": 200,
+          "prev_oi": 560.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0026,
+      "strike_price": 78900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873506",
+        "market_data": {
+          "ltp": 2.75,
+          "volume": 832420,
+          "oi": 85600.0,
+          "close_price": 7.65,
+          "bid_price": 1.85,
+          "bid_qty": 160,
+          "ask_price": 2.75,
+          "ask_qty": 40,
+          "prev_oi": 101600.0
+        },
+        "option_greeks": {
+          "vega": 1.3845,
+          "theta": -3.0316,
+          "gamma": 0.0,
+          "delta": 0.0062,
+          "iv": 17.52,
+          "pop": 0.59
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873132",
+        "market_data": {
+          "ltp": 2318.5,
+          "volume": 0,
+          "oi": 220.0,
+          "close_price": 2541.1,
+          "bid_price": 1700.0,
+          "bid_qty": 200,
+          "ask_price": 5300.0,
+          "ask_qty": 200,
+          "prev_oi": 220.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0016,
+      "strike_price": 79000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873287",
+        "market_data": {
+          "ltp": 1.7,
+          "volume": 8966020,
+          "oi": 1051860.0,
+          "close_price": 6.85,
+          "bid_price": 1.7,
+          "bid_qty": 400,
+          "ask_price": 1.8,
+          "ask_qty": 2040,
+          "prev_oi": 982180.0
+        },
+        "option_greeks": {
+          "vega": 0.9823,
+          "theta": -2.0984,
+          "gamma": 0.0,
+          "delta": 0.0042,
+          "iv": 17.09,
+          "pop": 0.4
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873402",
+        "market_data": {
+          "ltp": 3720.0,
+          "volume": 120,
+          "oi": 1720.0,
+          "close_price": 2639.6,
+          "bid_price": 3592.4,
+          "bid_qty": 100,
+          "ask_price": 3643.85,
+          "ask_qty": 20,
+          "prev_oi": 1700.0
+        },
+        "option_greeks": {
+          "vega": 10.5574,
+          "theta": -39.8903,
+          "gamma": 0.0001,
+          "delta": -0.9303,
+          "iv": 30.23,
+          "pop": 49.42
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873445",
+        "market_data": {
+          "ltp": 2.3,
+          "volume": 837660,
+          "oi": 106100.0,
+          "close_price": 6.0,
+          "bid_price": 1.65,
+          "bid_qty": 640,
+          "ask_price": 2.2,
+          "ask_qty": 400,
+          "prev_oi": 83740.0
+        },
+        "option_greeks": {
+          "vega": 1.1714,
+          "theta": -2.6364,
+          "gamma": 0.0,
+          "delta": 0.0052,
+          "iv": 18.01,
+          "pop": 0.49
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873083",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 2738.4,
+          "bid_price": 1800.0,
+          "bid_qty": 200,
+          "ask_price": 5500.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873326",
+        "market_data": {
+          "ltp": 1.6,
+          "volume": 1033540,
+          "oi": 172120.0,
+          "close_price": 5.5,
+          "bid_price": 1.6,
+          "bid_qty": 720,
+          "ask_price": 1.75,
+          "ask_qty": 840,
+          "prev_oi": 62000.0
+        },
+        "option_greeks": {
+          "vega": 0.8716,
+          "theta": -1.9285,
+          "gamma": 0.0,
+          "delta": 0.0037,
+          "iv": 17.7,
+          "pop": 0.35
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873433",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 2837.4,
+          "bid_price": 1900.0,
+          "bid_qty": 200,
+          "ask_price": 5700.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873478",
+        "market_data": {
+          "ltp": 1.7,
+          "volume": 846900,
+          "oi": 58920.0,
+          "close_price": 4.9,
+          "bid_price": 1.5,
+          "bid_qty": 1620,
+          "ask_price": 1.85,
+          "ask_qty": 660,
+          "prev_oi": 77080.0
+        },
+        "option_greeks": {
+          "vega": 0.9294,
+          "theta": -2.1273,
+          "gamma": 0.0,
+          "delta": 0.004,
+          "iv": 18.31,
+          "pop": 0.37
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873110",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 2936.6,
+          "bid_price": 2000.0,
+          "bid_qty": 200,
+          "ask_price": 5900.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873358",
+        "market_data": {
+          "ltp": 1.75,
+          "volume": 625740,
+          "oi": 102780.0,
+          "close_price": 4.7,
+          "bid_price": 1.6,
+          "bid_qty": 200,
+          "ask_price": 1.75,
+          "ask_qty": 200,
+          "prev_oi": 75480.0
+        },
+        "option_greeks": {
+          "vega": 0.8585,
+          "theta": -1.9912,
+          "gamma": 0.0,
+          "delta": 0.0036,
+          "iv": 18.55,
+          "pop": 0.34
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873461",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3035.9,
+          "bid_price": 2100.0,
+          "bid_qty": 200,
+          "ask_price": 6100.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0003,
+      "strike_price": 79500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873513",
+        "market_data": {
+          "ltp": 1.4,
+          "volume": 4171240,
+          "oi": 654360.0,
+          "close_price": 4.3,
+          "bid_price": 1.4,
+          "bid_qty": 7520,
+          "ask_price": 1.45,
+          "ask_qty": 80,
+          "prev_oi": 423100.0
+        },
+        "option_greeks": {
+          "vega": 0.7942,
+          "theta": -1.8663,
+          "gamma": 0.0,
+          "delta": 0.0033,
+          "iv": 18.8,
+          "pop": 0.31
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873342",
+        "market_data": {
+          "ltp": 3100.0,
+          "volume": 0,
+          "oi": 200.0,
+          "close_price": 3135.4,
+          "bid_price": 3512.0,
+          "bid_qty": 200,
+          "ask_price": 4688.0,
+          "ask_qty": 200,
+          "prev_oi": 200.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873391",
+        "market_data": {
+          "ltp": 1.35,
+          "volume": 376200,
+          "oi": 59220.0,
+          "close_price": 3.95,
+          "bid_price": 1.35,
+          "bid_qty": 280,
+          "ask_price": 1.7,
+          "ask_qty": 420,
+          "prev_oi": 42180.0
+        },
+        "option_greeks": {
+          "vega": 0.7358,
+          "theta": -1.7515,
+          "gamma": 0.0,
+          "delta": 0.0031,
+          "iv": 19.04,
+          "pop": 0.29
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873497",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3234.95,
+          "bid_price": 2200.05,
+          "bid_qty": 200,
+          "ask_price": 6200.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873262",
+        "market_data": {
+          "ltp": 1.35,
+          "volume": 511080,
+          "oi": 79940.0,
+          "close_price": 3.6,
+          "bid_price": 1.35,
+          "bid_qty": 11380,
+          "ask_price": 1.65,
+          "ask_qty": 400,
+          "prev_oi": 72920.0
+        },
+        "option_greeks": {
+          "vega": 0.7165,
+          "theta": -1.7383,
+          "gamma": 0.0,
+          "delta": 0.003,
+          "iv": 19.41,
+          "pop": 0.28
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873376",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3334.6,
+          "bid_price": 2200.05,
+          "bid_qty": 200,
+          "ask_price": 6300.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873424",
+        "market_data": {
+          "ltp": 1.2,
+          "volume": 417220,
+          "oi": 71880.0,
+          "close_price": 3.3,
+          "bid_price": 1.2,
+          "bid_qty": 2400,
+          "ask_price": 1.4,
+          "ask_qty": 2540,
+          "prev_oi": 68600.0
+        },
+        "option_greeks": {
+          "vega": 0.6342,
+          "theta": -1.5483,
+          "gamma": 0.0,
+          "delta": 0.0026,
+          "iv": 19.53,
+          "pop": 0.24
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873053",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3434.3,
+          "bid_price": 2300.05,
+          "bid_qty": 200,
+          "ask_price": 6400.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 79900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873293",
+        "market_data": {
+          "ltp": 1.65,
+          "volume": 545540,
+          "oi": 58420.0,
+          "close_price": 3.05,
+          "bid_price": 1.2,
+          "bid_qty": 240,
+          "ask_price": 1.65,
+          "ask_qty": 240,
+          "prev_oi": 37900.0
+        },
+        "option_greeks": {
+          "vega": 0.7814,
+          "theta": -2.0031,
+          "gamma": 0.0,
+          "delta": 0.0033,
+          "iv": 20.51,
+          "pop": 0.31
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873407",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3534.05,
+          "bid_price": 2400.05,
+          "bid_qty": 200,
+          "ask_price": 6500.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0119,
+      "strike_price": 80000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873188",
+        "market_data": {
+          "ltp": 1.25,
+          "volume": 3344400,
+          "oi": 811880.0,
+          "close_price": 2.8,
+          "bid_price": 1.25,
+          "bid_qty": 260,
+          "ask_price": 1.7,
+          "ask_qty": 980,
+          "prev_oi": 724980.0
+        },
+        "option_greeks": {
+          "vega": 0.6658,
+          "theta": -1.7068,
+          "gamma": 0.0,
+          "delta": 0.0027,
+          "iv": 20.51,
+          "pop": 0.26
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873294",
+        "market_data": {
+          "ltp": 3741.1,
+          "volume": 0,
+          "oi": 9680.0,
+          "close_price": 3741.1,
+          "bid_price": 4012.0,
+          "bid_qty": 200,
+          "ask_price": 5188.0,
+          "ask_qty": 200,
+          "prev_oi": 9680.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873348",
+        "market_data": {
+          "ltp": 1.45,
+          "volume": 230360,
+          "oi": 54640.0,
+          "close_price": 2.8,
+          "bid_price": 1.4,
+          "bid_qty": 320,
+          "ask_price": 1.45,
+          "ask_qty": 1360,
+          "prev_oi": 43640.0
+        },
+        "option_greeks": {
+          "vega": 0.7123,
+          "theta": -1.8802,
+          "gamma": 0.0,
+          "delta": 0.003,
+          "iv": 21.12,
+          "pop": 0.28
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873452",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3733.65,
+          "bid_price": 2500.05,
+          "bid_qty": 200,
+          "ask_price": 6700.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873216",
+        "market_data": {
+          "ltp": 1.0,
+          "volume": 315600,
+          "oi": 45840.0,
+          "close_price": 2.65,
+          "bid_price": 1.0,
+          "bid_qty": 4620,
+          "ask_price": 2.05,
+          "ask_qty": 600,
+          "prev_oi": 39380.0
+        },
+        "option_greeks": {
+          "vega": 0.5284,
+          "theta": -1.3707,
+          "gamma": 0.0,
+          "delta": 0.0021,
+          "iv": 20.75,
+          "pop": 0.2
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873333",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3833.45,
+          "bid_price": 2600.05,
+          "bid_qty": 200,
+          "ask_price": 6800.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873381",
+        "market_data": {
+          "ltp": 1.0,
+          "volume": 121460,
+          "oi": 34940.0,
+          "close_price": 2.5,
+          "bid_price": 1.0,
+          "bid_qty": 1840,
+          "ask_price": 1.55,
+          "ask_qty": 100,
+          "prev_oi": 39900.0
+        },
+        "option_greeks": {
+          "vega": 0.5188,
+          "theta": -1.3696,
+          "gamma": 0.0,
+          "delta": 0.0021,
+          "iv": 21.12,
+          "pop": 0.19
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873205",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 3933.3,
+          "bid_price": 2700.0,
+          "bid_qty": 200,
+          "ask_price": 6800.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873248",
+        "market_data": {
+          "ltp": 1.7,
+          "volume": 247620,
+          "oi": 36060.0,
+          "close_price": 2.3,
+          "bid_price": 1.0,
+          "bid_qty": 40,
+          "ask_price": 2.1,
+          "ask_qty": 200,
+          "prev_oi": 45100.0
+        },
+        "option_greeks": {
+          "vega": 0.6675,
+          "theta": -1.8536,
+          "gamma": 0.0,
+          "delta": 0.0028,
+          "iv": 22.22,
+          "pop": 0.26
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873364",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4033.2,
+          "bid_price": 2800.05,
+          "bid_qty": 200,
+          "ask_price": 7000.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873152",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 1558780,
+          "oi": 327480.0,
+          "close_price": 2.25,
+          "bid_price": 1.25,
+          "bid_qty": 1000,
+          "ask_price": 1.3,
+          "ask_qty": 100,
+          "prev_oi": 526580.0
+        },
+        "option_greeks": {
+          "vega": 0.627,
+          "theta": -1.7603,
+          "gamma": 0.0,
+          "delta": 0.0026,
+          "iv": 22.46,
+          "pop": 0.24
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873234",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4133.1,
+          "bid_price": 4512.0,
+          "bid_qty": 200,
+          "ask_price": 5688.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873278",
+        "market_data": {
+          "ltp": 1.25,
+          "volume": 120440,
+          "oi": 25000.0,
+          "close_price": 2.2,
+          "bid_price": 1.25,
+          "bid_qty": 940,
+          "ask_price": 1.8,
+          "ask_qty": 240,
+          "prev_oi": 19040.0
+        },
+        "option_greeks": {
+          "vega": 0.5896,
+          "theta": -1.6734,
+          "gamma": 0.0,
+          "delta": 0.0024,
+          "iv": 22.71,
+          "pop": 0.22
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873399",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4232.95,
+          "bid_price": 2800.05,
+          "bid_qty": 200,
+          "ask_price": 7200.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873169",
+        "market_data": {
+          "ltp": 0.9,
+          "volume": 310640,
+          "oi": 62600.0,
+          "close_price": 2.1,
+          "bid_price": 0.9,
+          "bid_qty": 1020,
+          "ask_price": 2.0,
+          "ask_qty": 200,
+          "prev_oi": 54700.0
+        },
+        "option_greeks": {
+          "vega": 0.4641,
+          "theta": -1.3029,
+          "gamma": 0.0,
+          "delta": 0.0018,
+          "iv": 22.46,
+          "pop": 0.17
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873266",
+        "market_data": {
+          "ltp": 2650.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4332.85,
+          "bid_price": 2900.05,
+          "bid_qty": 200,
+          "ask_price": 7300.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873315",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 88900,
+          "oi": 28040.0,
+          "close_price": 1.95,
+          "bid_price": 1.3,
+          "bid_qty": 880,
+          "ask_price": 2.0,
+          "ask_qty": 200,
+          "prev_oi": 30280.0
+        },
+        "option_greeks": {
+          "vega": 0.5698,
+          "theta": -1.6692,
+          "gamma": 0.0,
+          "delta": 0.0023,
+          "iv": 23.44,
+          "pop": 0.21
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873160",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4432.75,
+          "bid_price": 3000.05,
+          "bid_qty": 200,
+          "ask_price": 7500.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 80900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873191",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 133900,
+          "oi": 27100.0,
+          "close_price": 1.85,
+          "bid_price": 1.1,
+          "bid_qty": 1020,
+          "ask_price": 1.8,
+          "ask_qty": 200,
+          "prev_oi": 37840.0
+        },
+        "option_greeks": {
+          "vega": 0.4933,
+          "theta": -1.4453,
+          "gamma": 0.0,
+          "delta": 0.002,
+          "iv": 23.44,
+          "pop": 0.18
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873301",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4532.65,
+          "bid_price": 3100.05,
+          "bid_qty": 200,
+          "ask_price": 7600.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0028,
+      "strike_price": 81000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|873491",
+        "market_data": {
+          "ltp": 1.35,
+          "volume": 1636180,
+          "oi": 338600.0,
+          "close_price": 1.8,
+          "bid_price": 1.25,
+          "bid_qty": 420,
+          "ask_price": 1.4,
+          "ask_qty": 500,
+          "prev_oi": 514980.0
+        },
+        "option_greeks": {
+          "vega": 0.5988,
+          "theta": -1.8272,
+          "gamma": 0.0,
+          "delta": 0.0024,
+          "iv": 24.41,
+          "pop": 0.22
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|873119",
+        "market_data": {
+          "ltp": 4700.0,
+          "volume": 0,
+          "oi": 940.0,
+          "close_price": 4632.55,
+          "bid_price": 5112.0,
+          "bid_qty": 200,
+          "ask_price": 6188.0,
+          "ask_qty": 200,
+          "prev_oi": 940.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|888777",
+        "market_data": {
+          "ltp": 1.9,
+          "volume": 19520,
+          "oi": 21600.0,
+          "close_price": 1.9,
+          "bid_price": 1.1,
+          "bid_qty": 1000,
+          "ask_price": 1.8,
+          "ask_qty": 200,
+          "prev_oi": 23180.0
+        },
+        "option_greeks": {
+          "vega": 0.7397,
+          "theta": -2.359,
+          "gamma": 0.0,
+          "delta": 0.0031,
+          "iv": 25.51,
+          "pop": 0.28
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|888751",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4732.45,
+          "bid_price": 3000.05,
+          "bid_qty": 200,
+          "ask_price": 7900.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|888966",
+        "market_data": {
+          "ltp": 0.85,
+          "volume": 49760,
+          "oi": 30680.0,
+          "close_price": 1.8,
+          "bid_price": 0.9,
+          "bid_qty": 500,
+          "ask_price": 1.8,
+          "ask_qty": 200,
+          "prev_oi": 33060.0
+        },
+        "option_greeks": {
+          "vega": 0.4164,
+          "theta": -1.2581,
+          "gamma": 0.0,
+          "delta": 0.0016,
+          "iv": 24.17,
+          "pop": 0.15
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|888685",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4832.4,
+          "bid_price": 3100.05,
+          "bid_qty": 200,
+          "ask_price": 8000.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|888569",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 26740,
+          "oi": 16720.0,
+          "close_price": 1.65,
+          "bid_price": 0.85,
+          "bid_qty": 900,
+          "ask_price": 1.7,
+          "ask_qty": 220,
+          "prev_oi": 16720.0
+        },
+        "option_greeks": {
+          "vega": 0.4681,
+          "theta": -1.4572,
+          "gamma": 0.0,
+          "delta": 0.0019,
+          "iv": 24.9,
+          "pop": 0.17
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|888873",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 4932.3,
+          "bid_price": 3200.05,
+          "bid_qty": 200,
+          "ask_price": 8100.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889086",
+        "market_data": {
+          "ltp": 1.35,
+          "volume": 110020,
+          "oi": 37680.0,
+          "close_price": 1.75,
+          "bid_price": 0.8,
+          "bid_qty": 2800,
+          "ask_price": 1.8,
+          "ask_qty": 400,
+          "prev_oi": 12600.0
+        },
+        "option_greeks": {
+          "vega": 0.5642,
+          "theta": -1.8252,
+          "gamma": 0.0,
+          "delta": 0.0023,
+          "iv": 25.88,
+          "pop": 0.21
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889434",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5032.2,
+          "bid_price": 3300.05,
+          "bid_qty": 200,
+          "ask_price": 8100.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889306",
+        "market_data": {
+          "ltp": 0.8,
+          "volume": 427420,
+          "oi": 62720.0,
+          "close_price": 1.6,
+          "bid_price": 0.95,
+          "bid_qty": 120,
+          "ask_price": 1.4,
+          "ask_qty": 440,
+          "prev_oi": 130820.0
+        },
+        "option_greeks": {
+          "vega": 0.5781,
+          "theta": -1.9052,
+          "gamma": 0.0,
+          "delta": 0.0023,
+          "iv": 26.37,
+          "pop": 0.21
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889637",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5132.1,
+          "bid_price": 5612.0,
+          "bid_qty": 200,
+          "ask_price": 6688.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889226",
+        "market_data": {
+          "ltp": 1.5,
+          "volume": 36100,
+          "oi": 36300.0,
+          "close_price": 1.65,
+          "bid_price": 1.1,
+          "bid_qty": 320,
+          "ask_price": 1.5,
+          "ask_qty": 60,
+          "prev_oi": 32220.0
+        },
+        "option_greeks": {
+          "vega": 0.5918,
+          "theta": -1.9866,
+          "gamma": 0.0,
+          "delta": 0.0024,
+          "iv": 26.86,
+          "pop": 0.22
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889200",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5232.0,
+          "bid_price": 3300.05,
+          "bid_qty": 200,
+          "ask_price": 8400.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889443",
+        "market_data": {
+          "ltp": 1.15,
+          "volume": 47660,
+          "oi": 7960.0,
+          "close_price": 1.7,
+          "bid_price": 1.15,
+          "bid_qty": 20,
+          "ask_price": 1.5,
+          "ask_qty": 20,
+          "prev_oi": 9580.0
+        },
+        "option_greeks": {
+          "vega": 0.4845,
+          "theta": -1.6115,
+          "gamma": 0.0,
+          "delta": 0.0019,
+          "iv": 26.61,
+          "pop": 0.18
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889112",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5331.95,
+          "bid_price": 3400.0,
+          "bid_qty": 200,
+          "ask_price": 8400.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889646",
+        "market_data": {
+          "ltp": 1.25,
+          "volume": 56780,
+          "oi": 15700.0,
+          "close_price": 1.5,
+          "bid_price": 1.0,
+          "bid_qty": 560,
+          "ask_price": 1.8,
+          "ask_qty": 200,
+          "prev_oi": 18680.0
+        },
+        "option_greeks": {
+          "vega": 0.4979,
+          "theta": -1.6865,
+          "gamma": 0.0,
+          "delta": 0.002,
+          "iv": 27.1,
+          "pop": 0.18
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889333",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5431.85,
+          "bid_price": 3600.05,
+          "bid_qty": 200,
+          "ask_price": 8500.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 81900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889579",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 10680,
+          "oi": 6660.0,
+          "close_price": 1.55,
+          "bid_price": 1.3,
+          "bid_qty": 680,
+          "ask_price": 1.8,
+          "ask_qty": 700,
+          "prev_oi": 7480.0
+        },
+        "option_greeks": {
+          "vega": 0.5112,
+          "theta": -1.7628,
+          "gamma": 0.0,
+          "delta": 0.002,
+          "iv": 27.59,
+          "pop": 0.19
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889239",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5531.75,
+          "bid_price": 3600.05,
+          "bid_qty": 200,
+          "ask_price": 8700.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0002,
+      "strike_price": 82000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|1100577",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 1473560,
+          "oi": 302540.0,
+          "close_price": 1.45,
+          "bid_price": 1.25,
+          "bid_qty": 500,
+          "ask_price": 1.4,
+          "ask_qty": 480,
+          "prev_oi": 354780.0
+        },
+        "option_greeks": {
+          "vega": 0.5058,
+          "theta": -1.7672,
+          "gamma": 0.0,
+          "delta": 0.002,
+          "iv": 27.95,
+          "pop": 0.18
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100126",
+        "market_data": {
+          "ltp": 5682.0,
+          "volume": 0,
+          "oi": 60.0,
+          "close_price": 5631.65,
+          "bid_price": 6112.0,
+          "bid_qty": 200,
+          "ask_price": 7188.0,
+          "ask_qty": 200,
+          "prev_oi": 60.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82100.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889950",
+        "market_data": {
+          "ltp": 1.3,
+          "volume": 6960,
+          "oi": 6380.0,
+          "close_price": 1.45,
+          "bid_price": 1.15,
+          "bid_qty": 800,
+          "ask_price": 1.8,
+          "ask_qty": 200,
+          "prev_oi": 7220.0
+        },
+        "option_greeks": {
+          "vega": 0.5007,
+          "theta": -1.7723,
+          "gamma": 0.0,
+          "delta": 0.002,
+          "iv": 28.32,
+          "pop": 0.18
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100433",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5731.55,
+          "bid_price": 3500.0,
+          "bid_qty": 200,
+          "ask_price": 8900.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82200.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889835",
+        "market_data": {
+          "ltp": 0.75,
+          "volume": 13440,
+          "oi": 10400.0,
+          "close_price": 1.35,
+          "bid_price": 0.75,
+          "bid_qty": 2500,
+          "ask_price": 1.4,
+          "ask_qty": 40,
+          "prev_oi": 10760.0
+        },
+        "option_greeks": {
+          "vega": 0.3251,
+          "theta": -1.111,
+          "gamma": 0.0,
+          "delta": 0.0012,
+          "iv": 27.34,
+          "pop": 0.11
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100315",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5831.5,
+          "bid_price": 3600.0,
+          "bid_qty": 200,
+          "ask_price": 8900.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82300.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|1100145",
+        "market_data": {
+          "ltp": 0.75,
+          "volume": 14980,
+          "oi": 3720.0,
+          "close_price": 1.45,
+          "bid_price": 0.75,
+          "bid_qty": 1500,
+          "ask_price": 1.8,
+          "ask_qty": 700,
+          "prev_oi": 4100.0
+        },
+        "option_greeks": {
+          "vega": 0.3369,
+          "theta": -1.172,
+          "gamma": 0.0,
+          "delta": 0.0013,
+          "iv": 27.83,
+          "pop": 0.12
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100609",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 5931.4,
+          "bid_price": 3700.0,
+          "bid_qty": 200,
+          "ask_price": 9000.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82400.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|1100025",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 4760,
+          "oi": 1800.0,
+          "close_price": 1.55,
+          "bid_price": 1.1,
+          "bid_qty": 60,
+          "ask_price": 1.4,
+          "ask_qty": 120,
+          "prev_oi": 1960.0
+        },
+        "option_greeks": {
+          "vega": 0.4373,
+          "theta": -1.588,
+          "gamma": 0.0,
+          "delta": 0.0017,
+          "iv": 29.05,
+          "pop": 0.16
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889982",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6031.3,
+          "bid_price": 3800.0,
+          "bid_qty": 200,
+          "ask_price": 9200.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82500.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|1100331",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 1331460,
+          "oi": 170300.0,
+          "close_price": 1.4,
+          "bid_price": 1.1,
+          "bid_qty": 700,
+          "ask_price": 1.35,
+          "ask_qty": 100,
+          "prev_oi": 70600.0
+        },
+        "option_greeks": {
+          "vega": 0.4186,
+          "theta": -1.5328,
+          "gamma": 0.0,
+          "delta": 0.0016,
+          "iv": 29.3,
+          "pop": 0.15
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|889871",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6131.2,
+          "bid_price": 6612.0,
+          "bid_qty": 200,
+          "ask_price": 7688.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82600.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|1100622",
+        "market_data": {
+          "ltp": 1.0,
+          "volume": 80760,
+          "oi": 32880.0,
+          "close_price": 1.25,
+          "bid_price": 1.0,
+          "bid_qty": 4600,
+          "ask_price": 1.7,
+          "ask_qty": 20,
+          "prev_oi": 28860.0
+        },
+        "option_greeks": {
+          "vega": 0.4009,
+          "theta": -1.4804,
+          "gamma": 0.0,
+          "delta": 0.0016,
+          "iv": 29.54,
+          "pop": 0.14
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100178",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6231.15,
+          "bid_price": 4000.0,
+          "bid_qty": 200,
+          "ask_price": 9400.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82700.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|1100521",
+        "market_data": {
+          "ltp": 1.0,
+          "volume": 22300,
+          "oi": 5560.0,
+          "close_price": 1.45,
+          "bid_price": 1.0,
+          "bid_qty": 260,
+          "ask_price": 1.5,
+          "ask_qty": 300,
+          "prev_oi": 6020.0
+        },
+        "option_greeks": {
+          "vega": 0.3842,
+          "theta": -1.4306,
+          "gamma": 0.0,
+          "delta": 0.0015,
+          "iv": 29.79,
+          "pop": 0.14
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100064",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6331.05,
+          "bid_price": 4100.0,
+          "bid_qty": 200,
+          "ask_price": 9500.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82800.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889888",
+        "market_data": {
+          "ltp": 1.65,
+          "volume": 187680,
+          "oi": 69060.0,
+          "close_price": 1.4,
+          "bid_price": 1.0,
+          "bid_qty": 400,
+          "ask_price": 1.6,
+          "ask_qty": 20,
+          "prev_oi": 11800.0
+        },
+        "option_greeks": {
+          "vega": 0.5544,
+          "theta": -2.1824,
+          "gamma": 0.0,
+          "delta": 0.0022,
+          "iv": 31.49,
+          "pop": 0.2
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100365",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6430.95,
+          "bid_price": 4200.0,
+          "bid_qty": 200,
+          "ask_price": 9500.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 82900.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889769",
+        "market_data": {
+          "ltp": 1.1,
+          "volume": 134600,
+          "oi": 30500.0,
+          "close_price": 1.2,
+          "bid_price": 1.1,
+          "bid_qty": 280,
+          "ask_price": 1.25,
+          "ask_qty": 2100,
+          "prev_oi": 23700.0
+        },
+        "option_greeks": {
+          "vega": 0.3802,
+          "theta": -1.4502,
+          "gamma": 0.0,
+          "delta": 0.0015,
+          "iv": 30.52,
+          "pop": 0.13
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100662",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6530.85,
+          "bid_price": 4300.0,
+          "bid_qty": 200,
+          "ask_price": 9700.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    },
+    {
+      "expiry": "2025-04-08",
+      "pcr": 0.0,
+      "strike_price": 83000.0,
+      "underlying_key": "BSE_INDEX|SENSEX",
+      "underlying_spot_price": 75364.69,
+      "call_options": {
+        "instrument_key": "BSE_FO|889897",
+        "market_data": {
+          "ltp": 1.2,
+          "volume": 4366140,
+          "oi": 849140.0,
+          "close_price": 1.25,
+          "bid_price": 1.15,
+          "bid_qty": 1920,
+          "ask_price": 1.2,
+          "ask_qty": 14700,
+          "prev_oi": 453440.0
+        },
+        "option_greeks": {
+          "vega": 0.4198,
+          "theta": -1.6397,
+          "gamma": 0.0,
+          "delta": 0.0016,
+          "iv": 31.25,
+          "pop": 0.15
+        }
+      },
+      "put_options": {
+        "instrument_key": "BSE_FO|1100374",
+        "market_data": {
+          "ltp": 0.0,
+          "volume": 0,
+          "oi": 0.0,
+          "close_price": 6630.75,
+          "bid_price": 7112.0,
+          "bid_qty": 200,
+          "ask_price": 8188.0,
+          "ask_qty": 200,
+          "prev_oi": 0.0
+        },
+        "option_greeks": {
+          "vega": 0.0,
+          "theta": 0.0,
+          "gamma": 0.0,
+          "delta": -1.0,
+          "iv": 0.0,
+          "pop": 99.0
+        }
+      }
+    }
+  ]
+}
