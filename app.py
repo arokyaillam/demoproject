@@ -585,7 +585,7 @@ def profile():
 
 
 if __name__ == '__main__':
-    # Keep this part
+    # Initialize database if it doesn't exist
     if not os.path.exists('database.db'):
         db = get_db()
         db.execute('''
@@ -601,4 +601,83 @@ if __name__ == '__main__':
         ''')
         db.commit()
         db.close()
+    else:
+        # Check if columns exist and add them if they don't
+        db = get_db()
+        columns = db.execute("PRAGMA table_info(users)").fetchall()
+        column_names = [column[1] for column in columns]
+        
+        if 'client_id' not in column_names:
+            db.execute("ALTER TABLE users ADD COLUMN client_id TEXT")
+        if 'client_secret' not in column_names:
+            db.execute("ALTER TABLE users ADD COLUMN client_secret TEXT")
+        if 'redirect_uri' not in column_names:
+            db.execute("ALTER TABLE users ADD COLUMN redirect_uri TEXT")
+        if 'access_token' not in column_names:
+            db.execute("ALTER TABLE users ADD COLUMN access_token TEXT")
+        
+        db.commit()
+        db.close()
+        
     app.run(debug=True)
+
+
+@app.route('/initiate_upstox_auth')
+@login_required
+def initiate_upstox_auth():
+    try:
+        db = get_db()
+        # First check if the columns exist
+        columns = db.execute("PRAGMA table_info(users)").fetchall()
+        column_names = [column[1] for column in columns]
+        
+        # Check if required columns exist
+        if not all(col in column_names for col in ['client_id', 'client_secret', 'redirect_uri']):
+            # Add missing columns if they don't exist
+            if 'client_id' not in column_names:
+                db.execute("ALTER TABLE users ADD COLUMN client_id TEXT")
+            if 'client_secret' not in column_names:
+                db.execute("ALTER TABLE users ADD COLUMN client_secret TEXT")
+            if 'redirect_uri' not in column_names:
+                db.execute("ALTER TABLE users ADD COLUMN redirect_uri TEXT")
+            db.commit()
+            flash('Database schema updated. Please enter your Upstox API credentials.')
+            return redirect(url_for('profile'))
+        
+        # Get user data
+        user = db.execute("SELECT client_id, client_secret, redirect_uri FROM users WHERE id = ?", 
+                         (current_user.id,)).fetchone()
+        db.close()
+        
+        if not user or not user['client_id'] or not user['client_secret'] or not user['redirect_uri']:
+            flash('Missing Upstox API credentials. Please update your connection details first.')
+            return redirect(url_for('profile'))
+            
+        # Store in session for later use
+        session['upstox_credentials'] = {
+            'client_id': user['client_id'],
+            'client_secret': user['client_secret'],
+            'redirect_uri': user['redirect_uri']
+        }
+        
+        # Generate authorization URL with proper URL encoding
+        auth_params = {
+            'response_type': 'code',
+            'client_id': user['client_id'],
+            'redirect_uri': user['redirect_uri']
+        }
+        
+        # Print debug info
+        print(f"Initiating Upstox auth with params: {auth_params}")
+        
+        # Use the same URL format as in connect_upstox function
+        auth_url = f"https://api.upstox.com/v2/login/authorization/dialog?{urlencode(auth_params)}"
+        print(f"Redirecting to: {auth_url}")
+        
+        # Redirect to Upstox authorization page
+        return redirect(auth_url)
+    except Exception as e:
+        error_msg = f'Error initiating Upstox authentication: {str(e)}'
+        print(error_msg)
+        flash(error_msg)
+        return redirect(url_for('profile'))
